@@ -1,0 +1,13 @@
+{
+  "name": "Next Iteration — AI for Locals",
+  "short_name": "AI for Locals",
+  "description": "Practical, plain-English AI help for Mornington Peninsula businesses and individuals.",
+  "start_url": "/ai-for-locals/",
+  "display": "browser",
+  "background_color": "#f5f2ec",
+  "theme_color": "#19181a",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/assets/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ]
+}
