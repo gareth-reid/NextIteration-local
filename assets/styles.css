@@ -21,7 +21,7 @@
   --cta-text: #ffffff;
 
   --hero-bg: linear-gradient(160deg, #19181a 0%, #223528 100%);
-  --hero-text: #efe7cd;
+  --hero-text: #ffffff;
   --hero-muted: #cdc6b0;
 
   --chip-bg: #efe7cd;
@@ -29,7 +29,7 @@
   --chip-bg-hover: #e4d7a8;
 
   --band-bg: #2f6b45;
-  --band-text: #f2efe6;
+  --band-text: #ffffff;
   --band-muted: #cfe0d3;
 
   --icon-bg: #efe7cd;
@@ -51,7 +51,7 @@
     --bg: #121114;
     --surface: #1e1d21;
     --surface-soft: #26242a;
-    --text: #efe9df;
+    --text: #ffffff;
     --text-muted: #b7b1a6;
     --heading: #7fc99a;
     --link: #7fc99a;
@@ -64,7 +64,7 @@
     --cta-text: #ffffff;
 
     --hero-bg: linear-gradient(180deg, #0d0c0e 0%, #1c231b 100%);
-    --hero-text: #efe7cd;
+    --hero-text: #ffffff;
     --hero-muted: #b9b299;
 
     --chip-bg: #3a3620;
@@ -72,7 +72,7 @@
     --chip-bg-hover: #4a4429;
 
     --band-bg: #1f3a29;
-    --band-text: #eef3ea;
+    --band-text: #ffffff;
     --band-muted: #a9c3b1;
 
     --icon-bg: #24331d;
@@ -90,7 +90,7 @@
   --bg: #121114;
   --surface: #1e1d21;
   --surface-soft: #26242a;
-  --text: #efe9df;
+  --text: #ffffff;
   --text-muted: #b7b1a6;
   --heading: #7fc99a;
   --link: #7fc99a;
@@ -103,7 +103,7 @@
   --cta-text: #ffffff;
 
   --hero-bg: linear-gradient(180deg, #0d0c0e 0%, #1c231b 100%);
-  --hero-text: #efe7cd;
+  --hero-text: #ffffff;
   --hero-muted: #b9b299;
 
   --chip-bg: #3a3620;
@@ -111,7 +111,7 @@
   --chip-bg-hover: #4a4429;
 
   --band-bg: #1f3a29;
-  --band-text: #eef3ea;
+  --band-text: #ffffff;
   --band-muted: #a9c3b1;
 
   --icon-bg: #24331d;
