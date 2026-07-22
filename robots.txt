@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://local.next-iteration.com/sitemap.xml
+Sitemap: https://next-iteration.com/sitemap.xml
