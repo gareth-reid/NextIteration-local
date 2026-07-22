@@ -104,8 +104,7 @@
           "Workflow Automation"
         ],
         "openingHours": "Mo-Fr 09:00-17:00",
-        "founder": { "@id": "https://local.next-iteration.com/#gareth" },
-        "sameAs": ["https://next-iteration.com"]
+        "founder": { "@id": "https://local.next-iteration.com/#gareth" }
       },
       {
         "@type": "Person",
@@ -197,7 +196,7 @@
       padding: 0 24px;
     }
 
-    /* ─── Top bar (brand + back link — no lab nav) ───────────────────────── */
+    /* ─── Top bar (brand + free-review link) ─────────────────────────────── */
     .top-bar {
       background: var(--card);
       border-bottom: 1px solid var(--main);
@@ -615,6 +614,88 @@
       flex-shrink: 0;
     }
 
+    /* ─── Compact services grid ──────────────────────────────────────────── */
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 28px 0 8px;
+    }
+
+    .svc-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 20px;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+
+    .svc-card:hover { border-color: var(--main); transform: translateY(-2px); }
+
+    .svc-card .svc-ico {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: color-mix(in oklab, var(--main) 15%, transparent);
+      color: var(--main);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .svc-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .svc-card p {
+      font-size: 0.86rem;
+      color: var(--light);
+      line-height: 1.55;
+    }
+
+    .svc-card .svc-more {
+      margin-top: auto;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--main);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ─── Service area block ─────────────────────────────────────────────── */
+    .area-block {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 28px;
+      margin-top: 28px;
+    }
+
+    .area-towns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .area-towns span {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      background: rgba(255,255,255,0.04);
+      color: var(--light);
+      border: 1px solid var(--border);
+    }
+
     /* ─── Section CTA (repeated after major sections) ────────────────────── */
     .section-cta {
       margin-top: 40px;
@@ -850,6 +931,7 @@
     /* ─── Responsive ─────────────────────────────────────────────────────── */
     @media (max-width: 768px) {
       .section { padding: 60px 0; }
+      .svc-grid { grid-template-columns: 1fr; }
       .question-grid { grid-template-columns: 1fr; }
       .questions-grid { grid-template-columns: 1fr; }
       .two-col { grid-template-columns: 1fr; }
@@ -897,7 +979,7 @@
     }
   </style>
 
-  <!-- ─── Top bar (brand only — no lab consulting nav) ─────────────────────── -->
+  <!-- ─── Top bar (brand + free-review link) ───────────────────────────────── -->
   <header class="top-bar" role="banner">
     <div class="top-bar-inner">
       <a href="/" class="top-bar-brand" aria-label="Next Iteration — Local AI Help, home">
@@ -907,9 +989,9 @@
           <span class="hl">Local AI & Automation Help</span>
         </div>
       </a>
-      <a href="https://next-iteration.com" class="top-bar-back" rel="noopener">
-        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-        <span>Back to Lab Consulting Site</span>
+      <a href="#get-started" class="top-bar-back">
+        <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+        <span>Free AI Review</span>
       </a>
     </div>
   </header>
@@ -918,10 +1000,10 @@
   <div class="quick-links-wrap">
     <nav class="quick-links" aria-label="Page sections">
       <a href="#what-im-trying-to-do">What I'm Trying To Do</a>
+      <a href="#services">Services</a>
       <a href="#business-help">Business Help</a>
       <a href="#personal-help">Personal Help</a>
       <a href="#about-gareth">About Me</a>
-      <a href="/services/">Services</a>
       <a href="#get-started" class="ql-cta">Free AI Review</a>
     </nav>
   </div>
@@ -936,36 +1018,30 @@
         </div>
         <h1>Practical AI Help for Locals</h1>
         <p class="lead">
-          AI is here. Its moving quickly. It's brilliant. And I think everyone should have a chance to cash in. 
-          I want to help businesses & individuals understand: what it means, where it can help, how to protect 
-          ourselves and our children from it AND 
-          how to start getting it working for ourselves without getting lost in the minefield.
+          AI is here, it's moving quickly, and it's genuinely useful. I think everyone deserves a chance to
+          benefit from it. I help local businesses and individuals understand what it means, where it can help,
+          how to stay safe — and how to start putting it to work without getting lost in the noise.
         </p>
         <p class="body-text">
-          I'm Gareth Reid, a Mornington local with a long background in software engineering, 
-          automation, bioinforatics & data science, AI and complex workflow engineering. With the  
-          With 2 young kids, just starting primary school, I want to be IN the community more. 
-          If I knew how to be a local mechanic I would do that. 
+          I'm Gareth Reid, a Mornington local with a long background in software engineering, automation,
+          bioinformatics, data science and complex AI workflow engineering. With two young kids just starting
+          primary school, I want to spend more of my time in the community. If I knew how to be a local
+          mechanic, I'd do that.
         </p>
         <p class="lead2">
-            But I dont. 
+          But I don't — this is what I'm good at.
         </p>
         <p class="body-text">
-          I've spent much of my career working behind the scenes building solutions to complex problems in 
-          hospitals, clinical pathology & genomics labs, cancer research, personalised medicine and the 'businesslike' 
-          biopharmaceutical environments -
-          at companies such as Peter MacCallum Cancer Centre, CSL and Mater Hospital in Brisbane.  
+          I've spent much of my career behind the scenes, solving complex problems in hospitals, clinical
+          pathology and genomics labs, cancer research, personalised medicine and biopharmaceutical
+          environments — at organisations such as Peter MacCallum Cancer Centre, CSL and Mater Hospital in
+          Brisbane.
         </p>
         <p class="body-text">
-          Now im hoping to avoid the city and ply my trade in my local area - solving, supporting, 
-           training and helping
-           anyone who wants to see what's possible using A.I, Automation and a bit of clever process engineering to 
-           assist our businesses AND ourselves, to<span>
-           solve complex problems; build better solutions, create and power new apps and 
-           generally; complete tasks that we don't have the time, desire, ability OR know-how, to complete 
-           ourselves.</span>
+          Now I'm bringing those skills closer to home. I help local businesses and people use AI, automation
+          and a bit of clever process engineering to solve problems, build better tools, and get through the
+          tasks there's never enough time, desire or know-how to finish.
         </p>
-        <p class="lead"></p>
         <div class="hero-actions">
           <a href="#get-started" class="btn btn-primary">
             <i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a Free AI Review
@@ -999,8 +1075,8 @@
           Start small. Understand the value. Only build what actually helps or saves time & money.
         </div>
 
-        <p class="body-text">If I cannot see a clear way for AI, automation or data science to significantly 
-          benifit you or your business, I will tell you. 
+        <p class="body-text">If I cannot see a clear way for AI, automation or data science to significantly
+          benefit you or your business, I will tell you.
           </p>
 
         <p class="body-text" style="color: var(--light); font-weight: 500;">I can help you:</p>
@@ -1017,6 +1093,56 @@
         <div class="section-cta">
           <a href="#get-started" class="btn btn-primary">Book a Free AI Review</a>
           <p>Just a conversation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Services (compact overview) ──────────────────────────────────────── -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">What I Offer</div>
+        <h2 class="section-title">Services at a Glance</h2>
+        <p class="lead">Five practical ways I can help — scoped to what actually makes sense for your business or situation.</p>
+
+        <div class="svc-grid">
+          <a class="svc-card" href="/services/#ai-training">
+            <div class="svc-ico"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+            <h3>AI Setup &amp; Training</h3>
+            <p>Choosing, setting up and learning tools like ChatGPT and Claude — with plain-English, safe-use training.</p>
+            <span class="svc-more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="svc-card" href="/services/#automation">
+            <div class="svc-ico"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+            <h3>Workflow &amp; Admin Automation</h3>
+            <p>Turn repetitive admin — enquiries, hiring, follow-ups, scheduling — into simpler, faster workflows.</p>
+            <span class="svc-more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="svc-card" href="/services/#data-reporting">
+            <div class="svc-ico"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+            <h3>Data &amp; Reporting Dashboards</h3>
+            <p>Clearer reporting, dashboards and trends from the spreadsheets and systems you already use.</p>
+            <span class="svc-more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="svc-card" href="/services/#marketing">
+            <div class="svc-ico"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
+            <h3>Websites, Marketing &amp; Content</h3>
+            <p>Website copy, listings, social posts and emails that use AI properly — without sounding generic.</p>
+            <span class="svc-more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="svc-card" href="/services/#custom-tools">
+            <div class="svc-ico"><i class="fa-solid fa-toolbox" aria-hidden="true"></i></div>
+            <h3>Custom Tools &amp; Documentation</h3>
+            <p>Simple tools, SOPs and searchable knowledge bases so know-how isn't stuck in one person's head.</p>
+            <span class="svc-more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
+          <a class="svc-card" href="/services/" style="justify-content: center; align-items: flex-start;">
+            <div class="svc-ico" style="background: color-mix(in oklab, var(--main2) 15%, transparent); color: var(--main2);"><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></div>
+            <h3>See All Services</h3>
+            <p>Full details on each service, what's included, and where it fits.</p>
+            <span class="svc-more" style="color: var(--main2);">View services page <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+          </a>
         </div>
       </div>
     </div>
@@ -1048,7 +1174,7 @@
         <div class="subsection-label">Getting Started with AI</div>
         <h3>Understanding the Tools That Are Out There</h3>
         <p class="body-text">If you are curious about tools like ChatGPT, Claude, AI image and design platforms, AI marketing 
-          tools, words like agentic AI, 'Humans In The Loop' and hullucinations or how companies like Google, AWS and OpenAI, 
+          tools, words like agentic AI, 'Humans In The Loop' and hallucinations or how companies like Google, AWS and OpenAI,
           Anthropic, SnowFlake
            fit into the picture, I can help explain what they do, where they are useful, and where they can cause problems 
            if used carelessly.</p>
@@ -1136,9 +1262,9 @@
           <li>Business continuity notes</li>
         </ul>
         <div class="highlight-box" style="margin-top: 24px;">
-          Many businesses rely on one or two people "just knowing how things work." Good documentation reduces 
-          that pressure — and makes the business easier to hand over, scale, or step back from. AI can create and maintain this 
-          for you - to any level of compliance you require. 
+          Many businesses rely on one or two people "just knowing how things work." Good documentation reduces
+          that pressure — and makes the business easier to hand over, scale, or step back from. AI can help you
+          create and maintain this, so your own team can keep it accurate and up to date.
         </div>
       </div>
 
@@ -1147,12 +1273,13 @@
         <div class="subsection-label">Where to Start</div>
         <h3>As Simple or as Advanced as You Like</h3>
         <p class="body-text">You do not need to know exactly what you want.</p>
-        <p class="body-text">Some businesses may want some demos or training/eduction.
-          Others may want a custom admin team, real-time reporting dashboards, automation workflows, 
-          website updates, staff training session or internal documentation system.</p>
-          <p class="body-text">You may find a team of specially trained AI agents can prepare and submit 
-            your BAS, take & reschedule bookings, reshuffle the christmas party budget based on resultant tax bill, 
-            all whilst analysing operations and proposing ways optimise. All whilst you are makng a coffee.</p>
+        <p class="body-text">Some businesses may want some demos or training/education.
+          Others may want a custom admin assistant, real-time reporting dashboards, automation workflows,
+          website updates, a staff training session or an internal documentation system.</p>
+          <p class="body-text">You might find a team of AI assistants can help draft your paperwork,
+            take and reschedule bookings, organise your figures ready for your accountant, and surface
+            ways to work more efficiently — all whilst you are making a coffee. (I help set the tools up;
+            I don't provide accounting, tax, legal or other regulated professional advice — see the note below.)</p>
 
         <p class="body-text">All are good. <span class="lead">The point is to start.</span>
           </p>
@@ -1160,7 +1287,7 @@
 
       <div class="section-cta reveal">
         <a href="#get-started" class="btn btn-primary">Book a Free AI Review</a>
-        <p>Free, no-pressure — we'll look at your business and see what actually makes sense.</p>
+        <p>Free, no-pressure — I'll look at your business and see what actually makes sense.</p>
       </div>
     </div>
   </section>
@@ -1218,6 +1345,33 @@
         <div class="highlight-box" style="margin-top: 32px;">
           If I can see a way to save you time, reduce manual work, improve reporting or make something easier — I'll explain it clearly.<br /><br />
           If I cannot, I'll say that too.
+        </div>
+
+        <div class="area-block">
+          <div class="section-label" style="color: var(--main2);"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Service Area</div>
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 10px;">Based on the Mornington Peninsula &amp; Surrounds</h3>
+          <p class="body-text" style="margin-bottom: 0;">I'm based in Mornington, Victoria, and work with local businesses, families and individuals across the
+            Mornington Peninsula and nearby areas — in person locally, and online further afield. If you're just outside
+            these areas, get in touch anyway.</p>
+          <div class="area-towns">
+            <span>Mornington</span>
+            <span>Mount Eliza</span>
+            <span>Mount Martha</span>
+            <span>Frankston</span>
+            <span>Baxter</span>
+            <span>Somerville</span>
+            <span>Hastings</span>
+            <span>Tyabb</span>
+            <span>Dromana</span>
+            <span>Safety Beach</span>
+            <span>Rosebud</span>
+            <span>Rye</span>
+            <span>Sorrento</span>
+            <span>Portsea</span>
+            <span>Balnarring</span>
+            <span>Red Hill</span>
+            <span>Flinders</span>
+          </div>
         </div>
       </div>
     </div>
@@ -1394,9 +1548,15 @@
         </div>
       </div>
       <div class="local-footer-bottom">
-        <p>&copy; 2025 Next Iteration. All rights reserved.</p>
-        <p>Also offering <a href="/" style="color: var(--teal);">Lab Automation &amp; Technical Consulting</a> for life science laboratories. <span>|</span> <a href="#home" style="color: var(--muted);">Back to top ↑</a></p>
+        <p>&copy; 2026 Next Iteration. All rights reserved.</p>
+        <p>Serving the Mornington Peninsula &amp; surrounds. <span>|</span> <a href="#home" style="color: var(--muted);">Back to top ↑</a></p>
       </div>
+      <p style="font-size: 0.72rem; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--border); padding-top: 16px;">
+        Next Iteration provides AI, automation, data and software help only. It does not provide accounting, taxation,
+        BAS, legal, financial or other regulated professional advice. Any AI tools set up on your behalf are aids to
+        your own work — always check important outputs and consult a qualified professional (such as your accountant,
+        BAS agent or lawyer) before relying on them for compliance, tax or legal decisions.
+      </p>
     </div>
   </footer>
 
