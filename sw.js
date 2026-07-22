@@ -2,11 +2,13 @@
 // HTML: network first (changes cascade immediately)
 // Static assets: cache first (fast repeat loads)
 
-const CACHE_NAME = 'ni-local-v1';
+const CACHE_NAME = 'ni-local-v2';
 
 const PRECACHE_URLS = [
   '/',
   '/services/',
+  '/privacy/',
+  '/assets/site.css',
   '/assets/favicon.svg',
   '/assets/av.png',
   '/assets/icons/icon-192.png',

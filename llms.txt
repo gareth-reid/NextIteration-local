@@ -18,6 +18,8 @@
 ## Pages
 
 - [AI for Locals](https://next-iteration.com/): Main landing page — services, business help, personal help, about, and contact.
+- [Services](https://next-iteration.com/services/): Detailed breakdown of the five service areas.
+- [Privacy](https://next-iteration.com/privacy/): How contact form, email, analytics and cookies are handled.
 
 ## Services
 

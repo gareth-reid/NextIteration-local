@@ -4,25 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- ─── Primary meta ────────────────────────────────────────────────────── -->
   <title>Services — AI Help for Local Businesses | Next Iteration</title>
   <meta name="description" content="AI setup and training, workflow automation, data reporting, marketing support and custom tools for local businesses and individuals on the Mornington Peninsula." />
   <meta name="author" content="Gareth Reid" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://next-iteration.com/services/" />
 
+  <!-- ─── Open Graph ──────────────────────────────────────────────────────── -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Next Iteration — Local AI Help" />
   <meta property="og:title" content="Services — Practical AI Help for Local Businesses" />
   <meta property="og:description" content="AI setup, workflow automation, data reporting, marketing support and custom tools for local businesses on the Mornington Peninsula." />
   <meta property="og:url" content="https://next-iteration.com/services/" />
   <meta property="og:image" content="https://next-iteration.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="en_AU" />
 
+  <!-- ─── Twitter / X card ────────────────────────────────────────────────── -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Services — Practical AI Help for Local Businesses" />
   <meta name="twitter:description" content="AI setup, workflow automation, data reporting, marketing support and custom tools for local businesses on the Mornington Peninsula." />
   <meta name="twitter:image" content="https://next-iteration.com/assets/og-image.jpg" />
 
+  <!-- ─── Favicon stack ───────────────────────────────────────────────────── -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png" />
   <link rel="shortcut icon" href="/assets/favicon.ico" />
@@ -33,15 +39,21 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Local AI Help" />
 
+  <!-- ─── Performance hints + fonts + icons ───────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+  <!-- ─── Shared style system (same as homepage) ──────────────────────────── -->
+  <link rel="stylesheet" href="/assets/site.css" />
+
+  <!-- ─── Analytics ───────────────────────────────────────────────────────── -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQEQ19CEVB"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VQEQ19CEVB');</script>
 
+  <!-- ─── Structured data ─────────────────────────────────────────────────── -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,288 +70,20 @@
     ]
   }
   </script>
-
-  <style>
-    :root {
-      --bg:         #1A1A24;
-      --bg-alt:     #1E1E2C;
-      --card:       #22222E;
-      --border:     #2E2E40;
-      --main:       #FF4500;
-      --main2:      #4169e1;
-      --teal:       #192fb0;
-      --teal-dim:   #d1d5ef;
-      --pink:       #E8207A;
-      --pink-dim:   rgba(232,32,122,0.12);
-      --green:      #22c55e;
-      --white:      #FFFFFF;
-      --muted:      #636374;
-      --light:      #C4C4DC;
-      --radius:     12px;
-      --radius-lg:  20px;
-      --transition: 0.3s ease;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--white);
-      line-height: 1.7;
-      overflow-x: hidden;
-      font-size: 1rem;
-    }
-    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.25; }
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; display: block; }
-    ul { list-style: none; }
-
-    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
-
-    /* Skip link */
-    .sr-skip {
-      position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
-    }
-    .sr-skip:focus {
-      position: fixed; top: 0; left: 0; width: auto; height: auto;
-      padding: 12px 20px; background: var(--main); color: #fff;
-      font-weight: 700; font-size: 0.9rem; z-index: 9999; border-radius: 0 0 8px 0;
-    }
-
-    /* Top bar */
-    .top-bar {
-      background: var(--card);
-      border-bottom: 1px solid var(--main);
-      padding: 14px 0;
-    }
-    .top-bar-inner {
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: 860px; margin: 0 auto; padding: 0 24px;
-    }
-    .top-bar-brand {
-      display: flex; align-items: center; gap: 10px;
-      font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 700;
-    }
-    .top-bar-brand span {
-      display: block; font-size: 0.65rem; font-weight: 400;
-      color: var(--main); letter-spacing: 0.08em; text-transform: uppercase;
-    }
-    .top-bar-back {
-      font-size: 0.8rem; color: var(--muted);
-      display: flex; align-items: center; gap: 6px; transition: color var(--transition);
-    }
-    .top-bar-back:hover { color: var(--light); }
-
-    /* Quick-links nav */
-    .quick-links-wrap {
-      position: sticky; top: 0; z-index: 90;
-      background: rgba(26,26,36,0.97);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-    }
-    .quick-links {
-      display: flex; align-items: center; gap: 4px;
-      max-width: 860px; margin: 0 auto; padding: 0 16px;
-      overflow-x: auto; scrollbar-width: none;
-    }
-    .quick-links::-webkit-scrollbar { display: none; }
-    .quick-links a {
-      display: block; padding: 14px 14px; font-size: 0.85rem; font-weight: 500;
-      color: var(--muted); white-space: nowrap;
-      border-bottom: 2px solid transparent;
-      transition: color var(--transition), border-color var(--transition);
-    }
-    .quick-links a:hover { color: var(--white); border-color: var(--main); }
-    .quick-links .ql-home {
-      color: var(--muted); border-bottom: none;
-      padding-right: 16px; border-right: 1px solid var(--border); margin-right: 8px;
-    }
-    .quick-links .ql-home:hover { color: var(--light); border-bottom: none; }
-    .quick-links .ql-cta {
-      margin-left: auto; background: var(--main); color: #fff;
-      padding: 8px 18px; border-radius: 8px; font-weight: 700; font-size: 0.82rem;
-      flex-shrink: 0; border-bottom: none !important;
-      transition: opacity var(--transition), transform var(--transition);
-    }
-    .quick-links .ql-cta:hover { opacity: 0.9; transform: translateY(-1px); }
-
-    /* Page header */
-    .page-header {
-      padding: 64px 0 52px;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-    }
-    .page-header .section-label {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 0.76rem; font-weight: 700; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--main); margin-bottom: 16px;
-    }
-    .page-header .section-label::before {
-      content: ''; display: block; width: 20px; height: 2px;
-      background: var(--main); border-radius: 2px;
-    }
-    .page-header h1 {
-      font-size: clamp(1.9rem, 5vw, 2.8rem); font-weight: 700;
-      color: var(--white); margin-bottom: 16px; letter-spacing: -0.02em;
-    }
-    .page-header .lead {
-      font-size: 1.05rem; color: var(--light); line-height: 1.8; max-width: 640px;
-    }
-
-    /* Service sections */
-    .service-section {
-      padding: 72px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .service-section:nth-child(even) { background: var(--bg-alt); }
-    .service-section:last-of-type { border-bottom: none; }
-
-    .service-number {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--svc-color, var(--main));
-      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
-    }
-    .service-number::before {
-      content: ''; display: block; width: 20px; height: 2px;
-      background: var(--svc-color, var(--main)); border-radius: 2px;
-    }
-
-    .service-icon-wrap {
-      width: 56px; height: 56px; border-radius: var(--radius);
-      background: color-mix(in oklab, var(--svc-color, var(--main)) 15%, transparent);
-      color: var(--svc-color, var(--main));
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem; margin-bottom: 20px;
-      border: 1px solid color-mix(in oklab, var(--svc-color, var(--main)) 30%, transparent);
-    }
-
-    .service-section h2 {
-      font-size: clamp(1.4rem, 3.5vw, 1.9rem); font-weight: 700;
-      color: var(--white); margin-bottom: 16px;
-    }
-
-    .service-desc {
-      font-size: 1rem; color: var(--light); line-height: 1.8;
-      margin-bottom: 28px; max-width: 700px;
-    }
-
-    .service-uses {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-bottom: 32px;
-    }
-
-    .use-item {
-      display: flex; align-items: flex-start; gap: 10px;
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 12px 16px;
-      font-size: 0.88rem; color: var(--light); line-height: 1.4;
-      transition: border-color var(--transition);
-    }
-    .use-item:hover { border-color: var(--svc-color, var(--main)); }
-    .use-item i {
-      color: var(--svc-color, var(--main));
-      font-size: 0.72rem; margin-top: 4px; flex-shrink: 0;
-    }
-
-    /* CTA strip */
-    .service-cta {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: color-mix(in oklab, var(--svc-color, var(--main)) 12%, transparent);
-      border: 1px solid color-mix(in oklab, var(--svc-color, var(--main)) 35%, transparent);
-      color: var(--svc-color, var(--main));
-      padding: 10px 20px; border-radius: 8px;
-      font-family: 'Space Grotesk', sans-serif; font-size: 0.88rem; font-weight: 600;
-      transition: background var(--transition);
-    }
-    .service-cta:hover {
-      background: color-mix(in oklab, var(--svc-color, var(--main)) 20%, transparent);
-    }
-
-    /* Bottom CTA section */
-    .cta-section {
-      padding: 80px 0; background: var(--bg-alt); text-align: center;
-    }
-    .cta-section h2 {
-      font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700;
-      margin-bottom: 16px;
-    }
-    .cta-section p { font-size: 1rem; color: var(--muted); margin-bottom: 32px; }
-
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 28px; border-radius: 8px;
-      font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600;
-      cursor: pointer; transition: var(--transition); border: none;
-    }
-    .btn-primary { background: var(--main); color: #fff; }
-    .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,69,0,0.3); }
-    .btn-outline {
-      background: transparent; color: var(--white);
-      border: 1.5px solid var(--border);
-    }
-    .btn-outline:hover { border-color: var(--light); transform: translateY(-2px); }
-
-    /* Footer */
-    .local-footer {
-      background: var(--card); border-top: 1px solid var(--border); padding: 40px 0 28px;
-    }
-    .local-footer-inner {
-      max-width: 860px; margin: 0 auto; padding: 0 24px;
-      display: flex; flex-direction: column; gap: 20px;
-    }
-    .local-footer-top {
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 16px;
-    }
-    .local-footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
-    .local-footer-links a { font-size: 0.85rem; color: var(--muted); transition: color var(--transition); }
-    .local-footer-links a:hover { color: var(--main); }
-    .local-footer-bottom {
-      border-top: 1px solid var(--border); padding-top: 20px;
-      display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 12px;
-    }
-    .local-footer-bottom p { font-size: 0.8rem; color: var(--muted); }
-
-    /* Reveal */
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .service-uses { grid-template-columns: 1fr; }
-      .service-section { padding: 52px 0; }
-      .top-bar-back span { display: none; }
-    }
-    @media (max-width: 480px) {
-      .page-header { padding: 48px 0 36px; }
-    }
-  </style>
 </head>
 <body>
 
+  <!-- Skip to main content -->
   <a href="#main-content" class="sr-skip">Skip to main content</a>
 
+  <!-- ─── Top bar (same brand + free-review link as homepage) ──────────────── -->
   <header class="top-bar" role="banner">
     <div class="top-bar-inner">
       <a href="/" class="top-bar-brand" aria-label="Next Iteration — Local AI Help, home">
-        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-          <rect width="36" height="36" rx="8" fill="#22222E"/>
-          <path d="M14 8V18L9 27H27L22 18V8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <line x1="12" y1="8" x2="24" y2="8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-          <circle cx="14" cy="23" r="1.5" fill="#4ECDC4"/>
-          <circle cx="19" cy="21" r="1.5" fill="#F5B800"/>
-          <circle cx="22" cy="24" r="1.5" fill="#E8207A"/>
-          <line x1="14" y1="23" x2="19" y2="21" stroke="#4ECDC4" stroke-width="0.8"/>
-          <line x1="19" y1="21" x2="22" y2="24" stroke="#F5B800" stroke-width="0.8"/>
-        </svg>
+        <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
         <div>
           Next Iteration Local
-          <span>Local AI Help</span>
+          <span class="hl">Local AI &amp; Automation Help</span>
         </div>
       </a>
       <a href="/#get-started" class="top-bar-back">
@@ -349,12 +93,13 @@
     </div>
   </header>
 
+  <!-- ─── Sticky quick-links ───────────────────────────────────────────────── -->
   <div class="quick-links-wrap">
     <nav class="quick-links" aria-label="Page sections">
-      <a href="/" class="ql-home"><i class="fa-solid fa-house" aria-hidden="true"></i></a>
+      <a href="/" class="ql-home" aria-label="Home"><i class="fa-solid fa-house" aria-hidden="true"></i></a>
       <a href="#ai-training">AI Training</a>
       <a href="#automation">Automation</a>
-      <a href="#data-reporting">Data & Reporting</a>
+      <a href="#data-reporting">Data &amp; Reporting</a>
       <a href="#marketing">Marketing</a>
       <a href="#custom-tools">Custom Tools</a>
       <a href="/#get-started" class="ql-cta">Free AI Review</a>
@@ -363,22 +108,35 @@
 
   <main id="main-content">
 
-    <!-- ─── Page header ──────────────────────────────────────────────────────── -->
-    <div class="page-header">
-      <div class="container reveal">
-        <div class="section-label">What I Offer</div>
-        <h1>Services</h1>
-        <p class="lead">Practical AI help for local businesses and individuals — from a first conversation through to working tools. Everything is scoped to what actually makes sense for your situation.</p>
+    <!-- ─── Hero / page header ───────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container">
+        <div class="reveal">
+          <div class="hero-badge"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> What I Offer</div>
+          <h1>Services</h1>
+          <p class="lead">
+            Practical AI help for local businesses and individuals — from a first conversation through to working
+            tools. Everything is scoped to what actually makes sense for your situation.
+          </p>
+          <div class="hero-actions">
+            <a href="/#get-started" class="btn btn-primary">
+              <i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a Free AI Review
+            </a>
+            <a href="/" class="btn btn-outline">
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Home
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- ─── 1. AI Setup & Training ───────────────────────────────────────────── -->
-    <section class="service-section" id="ai-training" style="--svc-color: var(--main);">
+    <section class="section" id="ai-training" style="--svc-color: var(--main);">
       <div class="container reveal">
         <div class="service-number">Service 01</div>
         <div class="service-icon-wrap" aria-hidden="true"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
-        <h2>AI Setup &amp; Training</h2>
-        <p class="service-desc">Help choosing, setting up and learning tools like ChatGPT, Claude and other AI apps. Includes plain-English training, safe-use guidance, prompt templates, and practical examples for business or personal use.</p>
+        <h2 class="section-title">AI Setup &amp; Training</h2>
+        <p class="body-text">Help choosing, setting up and learning tools like ChatGPT, Claude and other AI apps. Includes plain-English training, safe-use guidance, prompt templates, and practical examples for business or personal use.</p>
         <div class="service-uses">
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Choosing the right AI tools for your needs</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Getting set up and running on ChatGPT or Claude</div>
@@ -389,17 +147,20 @@
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Personal use — everyday tasks and family admin</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Ongoing support as tools evolve</div>
         </div>
-        <a href="/#get-started" class="service-cta"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review to get started</a>
+        <div class="section-cta">
+          <a href="/#get-started" class="btn btn-primary"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review</a>
+          <p>Start with a conversation — no commitment.</p>
+        </div>
       </div>
     </section>
 
     <!-- ─── 2. Workflow & Admin Automation ───────────────────────────────────── -->
-    <section class="service-section" id="automation" style="--svc-color: var(--main2);">
+    <section class="section section-alt" id="automation" style="--svc-color: var(--teal);">
       <div class="container reveal">
         <div class="service-number">Service 02</div>
         <div class="service-icon-wrap" aria-hidden="true"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
-        <h2>Workflow &amp; Admin Automation</h2>
-        <p class="service-desc">Turn repetitive tasks into simpler workflows using forms, spreadsheets, AI assistants, automations or lightweight tools. Useful for enquiries, hiring, onboarding, follow-ups, scheduling, document generation, household admin or personal planning.</p>
+        <h2 class="section-title">Workflow &amp; Admin Automation</h2>
+        <p class="body-text">Turn repetitive tasks into simpler workflows using forms, spreadsheets, AI assistants, automations or lightweight tools. Useful for enquiries, hiring, onboarding, follow-ups, scheduling, document generation, household admin or personal planning.</p>
         <div class="service-uses">
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Customer enquiries and quote requests</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Hiring and job application workflows</div>
@@ -410,17 +171,20 @@
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Household admin and personal planning</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Reducing repetitive daily manual tasks</div>
         </div>
-        <a href="/#get-started" class="service-cta"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review to get started</a>
+        <div class="section-cta">
+          <a href="/#get-started" class="btn btn-primary"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review</a>
+          <p>I'll help find the tasks worth automating first.</p>
+        </div>
       </div>
     </section>
 
-    <!-- ─── 3. Data, Reporting & Decision Support ─────────────────────────────── -->
-    <section class="service-section" id="data-reporting" style="--svc-color: #22c55e;">
+    <!-- ─── 3. Data, Reporting & Decision Support ────────────────────────────── -->
+    <section class="section" id="data-reporting" style="--svc-color: #22c55e;">
       <div class="container reveal">
         <div class="service-number">Service 03</div>
         <div class="service-icon-wrap" aria-hidden="true"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
-        <h2>Data, Reporting &amp; Decision Support</h2>
-        <p class="service-desc">Set up clearer reporting from spreadsheets, finance tools, booking systems, CRMs or personal records. Includes dashboards, summaries, trend analysis, simple forecasting, budgeting support and better visibility over what is happening.</p>
+        <h2 class="section-title">Data, Reporting &amp; Decision Support</h2>
+        <p class="body-text">Set up clearer reporting from spreadsheets, finance tools, booking systems, CRMs or personal records. Includes dashboards, summaries, trend analysis, simple forecasting, budgeting support and better visibility over what is happening.</p>
         <div class="service-uses">
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sales summaries and trend analysis</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Customer behaviour and repeat business insights</div>
@@ -431,17 +195,20 @@
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Making sense of data you already have</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Connecting spreadsheets, CRMs and booking tools</div>
         </div>
-        <a href="/#get-started" class="service-cta"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review to get started</a>
+        <div class="section-cta">
+          <a href="/#get-started" class="btn btn-primary"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review</a>
+          <p>Reporting and data help — not accounting, tax or financial advice.</p>
+        </div>
       </div>
     </section>
 
-    <!-- ─── 4. Websites, Marketing & Content Support ──────────────────────────── -->
-    <section class="service-section" id="marketing" style="--svc-color: var(--pink);">
+    <!-- ─── 4. Websites, Marketing & Content Support ─────────────────────────── -->
+    <section class="section section-alt" id="marketing" style="--svc-color: var(--pink);">
       <div class="container reveal">
         <div class="service-number">Service 04</div>
         <div class="service-icon-wrap" aria-hidden="true"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
-        <h2>Websites, Marketing &amp; Content Support</h2>
-        <p class="service-desc">Use AI properly to create clearer website copy, directory listings, social posts, customer emails, service descriptions, FAQs, newsletters or personal documents — without sounding generic or robotic.</p>
+        <h2 class="section-title">Websites, Marketing &amp; Content Support</h2>
+        <p class="body-text">Use AI properly to create clearer website copy, directory listings, social posts, customer emails, service descriptions, FAQs, newsletters or personal documents — without sounding generic or robotic.</p>
         <div class="service-uses">
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Website copy and service descriptions</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Google Business and directory profiles</div>
@@ -452,17 +219,20 @@
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Simple landing pages or website builds</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Personal documents and letters</div>
         </div>
-        <a href="/#get-started" class="service-cta"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review to get started</a>
+        <div class="section-cta">
+          <a href="/#get-started" class="btn btn-primary"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review</a>
+          <p>Content that still sounds like you.</p>
+        </div>
       </div>
     </section>
 
     <!-- ─── 5. Custom Tools, Documentation & Knowledge Systems ───────────────── -->
-    <section class="service-section" id="custom-tools" style="--svc-color: #a78bfa;">
+    <section class="section" id="custom-tools" style="--svc-color: #a78bfa;">
       <div class="container reveal">
         <div class="service-number">Service 05</div>
         <div class="service-icon-wrap" aria-hidden="true"><i class="fa-solid fa-toolbox" aria-hidden="true"></i></div>
-        <h2>Custom Tools, Documentation &amp; Knowledge Systems</h2>
-        <p class="service-desc">Build simple tools, documentation systems or searchable knowledge bases for businesses, families or individuals. Useful for SOPs, how-to guides, staff training notes, personal records, family information, checklists and repeatable processes.</p>
+        <h2 class="section-title">Custom Tools, Documentation &amp; Knowledge Systems</h2>
+        <p class="body-text">Build simple tools, documentation systems or searchable knowledge bases for businesses, families or individuals. Useful for SOPs, how-to guides, staff training notes, personal records, family information, checklists and repeatable processes.</p>
         <div class="service-uses">
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Standard operating procedures (SOPs)</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Staff training guides and how-to documents</div>
@@ -473,16 +243,20 @@
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Simple AI-powered tools and assistants</div>
           <div class="use-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Repeatable process templates</div>
         </div>
-        <a href="/#get-started" class="service-cta"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review to get started</a>
+        <div class="section-cta">
+          <a href="/#get-started" class="btn btn-primary"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a free review</a>
+          <p>Get know-how out of one person's head.</p>
+        </div>
       </div>
     </section>
 
-    <!-- ─── CTA ──────────────────────────────────────────────────────────────── -->
-    <section class="cta-section">
-      <div class="container reveal">
-        <h2>Not Sure Which Service Fits?</h2>
-        <p>Start with a free, no-pressure AI review. I'll listen to what your business or situation actually needs and suggest the most practical place to start.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;">
+    <!-- ─── Bottom CTA ───────────────────────────────────────────────────────── -->
+    <section class="section section-alt" id="get-started-cta">
+      <div class="container reveal" style="text-align: center; max-width: 620px; margin: 0 auto;">
+        <div class="section-label" style="justify-content: center;">Free Review</div>
+        <h2 class="section-title">Not Sure Which Service Fits?</h2>
+        <p class="lead">Start with a free, no-pressure AI review. I'll listen to what your business or situation actually needs and suggest the most practical place to start.</p>
+        <div class="hero-actions" style="justify-content: center;">
           <a href="/#get-started" class="btn btn-primary"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a Free AI Review</a>
           <a href="/" class="btn btn-outline"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Home</a>
         </div>
@@ -491,6 +265,7 @@
 
   </main>
 
+  <!-- ─── Footer (same as homepage) ────────────────────────────────────────── -->
   <footer class="local-footer" role="contentinfo">
     <div class="local-footer-inner">
       <div class="local-footer-top">
@@ -498,35 +273,38 @@
           <div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px;">Next Iteration — Local AI Help</div>
           <div style="font-size: 0.83rem; color: var(--muted);">Practical AI for local businesses and individuals on the Mornington Peninsula, Victoria.</div>
           <div style="font-size: 0.83rem; color: var(--muted); margin-top: 4px;">
-            <i class="fa-solid fa-envelope" style="color: var(--main); margin-right: 6px;" aria-hidden="true"></i>info@next-iteration.com
+            <i class="fa-solid fa-envelope" style="color: var(--teal); margin-right: 6px;" aria-hidden="true"></i>info@next-iteration.com
           </div>
         </div>
         <div class="local-footer-links">
           <a href="/">Home</a>
           <a href="/services/">Services</a>
           <a href="/#about-gareth">About</a>
+          <a href="/privacy/">Privacy</a>
           <a href="/#get-started">Free Review</a>
         </div>
       </div>
       <div class="local-footer-bottom">
         <p>&copy; 2026 Next Iteration. All rights reserved.</p>
-        <p>Practical AI help across the Mornington Peninsula &amp; surrounds.</p>
+        <p>Practical AI help across the Mornington Peninsula &amp; surrounds. <span>|</span> <a href="#main-content" style="color: var(--muted);">Back to top ↑</a></p>
       </div>
       <p style="font-size: 0.72rem; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--border); padding-top: 16px;">
         Next Iteration provides AI, automation, data and software help only. It does not provide accounting, taxation,
         BAS, legal, financial or other regulated professional advice. Any AI tools set up on your behalf are aids to
-        your own work — always check important outputs and consult a qualified professional before relying on them for
-        compliance, tax or legal decisions.
+        your own work — always check important outputs and consult a qualified professional (such as your accountant,
+        BAS agent or lawyer) before relying on them for compliance, tax or legal decisions.
       </p>
     </div>
   </footer>
 
   <script>
+    // ── Scroll reveal ─────────────────────────────────────────────────────
     const obs = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
+    // ── Quick-links active state ──────────────────────────────────────────
     const sections = document.querySelectorAll('section[id]');
     const qlLinks  = document.querySelectorAll('.quick-links a:not(.ql-cta):not(.ql-home)');
     const sectionObs = new IntersectionObserver((entries) => {
@@ -542,6 +320,7 @@
     }, { threshold: 0.35 });
     sections.forEach(s => sectionObs.observe(s));
 
+    // ── Service Worker ────────────────────────────────────────────────────
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js').catch(() => {}); });
     }
