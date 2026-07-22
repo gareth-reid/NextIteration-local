@@ -6,10 +6,11 @@
 
 - **Provider:** Gareth Reid, trading as Next Iteration.
 - **What:** AI guidance, setup and training; workflow and admin automation; data, reporting and decision support; websites, marketing and content support; custom tools, documentation and knowledge systems.
-- **For whom:** Small and local businesses, individuals, families and community users — including older or less technical people.
+- **For whom:** Small and local businesses, individuals, families and community users — including people who are less technical or just getting started with AI.
 - **Where:** Mornington Peninsula, Mornington, Frankston, South East Melbourne, Western Port and nearby regions in Victoria, Australia. Service-area based (no public storefront).
 - **Differentiator:** Local, practical, and plain-English, backed by serious technical experience — including work at Peter MacCallum Cancer Centre and CSL in healthcare, pathology, cancer research and biopharmaceutical software, automation and data.
 - **Trust caveat:** If there is no clear way for AI, automation or better reporting to help, Gareth will say so rather than sell an unnecessary project. 
+- **Advice caveat:** Next Iteration provides AI, automation, data and software support only. It does not provide accounting, taxation, BAS, legal, financial or other regulated professional advice.
 
 ## Primary call to action
 
@@ -31,4 +32,8 @@
 
 ## Contact
 
+- Website: https://next-iteration.com/
 - Email: info@next-iteration.com
+
+- LinkedIn: https://www.linkedin.com/company/next-iteration-lab-consulting
+- Google Business Profile: https://share.google/HwlUtH4KakyhxXBvm
