@@ -1,476 +1,1470 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>AI for Locals | Practical AI Help on the Mornington Peninsula</title>
-  <meta name="description" content="Friendly, plain-English AI guidance and support for local small businesses and individuals on and around the Mornington Peninsula. Free, no-pressure AI review available.">
-  <link rel="canonical" href="https://next-iteration.com/">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="author" content="Gareth Reid">
-  <meta name="theme-color" content="#19181a">
-  <meta name="geo.region" content="AU-VIC">
-  <meta name="geo.placename" content="Mornington Peninsula, Victoria">
+  <!-- ─── Primary meta ────────────────────────────────────────────────────── -->
+  <title>AI Help for Local Businesses — Mornington Peninsula | Next Iteration</title>
+  <meta name="description" content="Practical AI help for local businesses and individuals on the Mornington Peninsula, Victoria. Free AI review — no jargon, no hard sell. Reduce admin, improve reporting, understand AI tools." />
+  <meta name="author" content="Gareth Reid" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="keywords" content="AI help Mornington Peninsula, local business AI, ChatGPT for small business, AI automation Victoria, Gareth Reid, Next Iteration" />
+  <link rel="canonical" href="https://local.next-iteration.com/" />
 
-  <!-- Open Graph / social -->
-  <meta property="og:title" content="AI for Locals | Practical AI Help on the Mornington Peninsula">
-  <meta property="og:description" content="Friendly, plain-English AI guidance and support for local small businesses and individuals on and around the Mornington Peninsula.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://next-iteration.com/">
-  <meta property="og:image" content="https://next-iteration.com/assets/og-ai-for-locals.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="AI for Locals — practical AI help for Mornington Peninsula businesses and individuals">
-  <meta property="og:locale" content="en_AU">
-  <meta property="og:site_name" content="Next Iteration">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI for Locals | Practical AI Help on the Mornington Peninsula">
-  <meta name="twitter:description" content="Friendly, plain-English AI guidance and support for local small businesses and individuals on and around the Mornington Peninsula.">
-  <meta name="twitter:image" content="https://next-iteration.com/assets/og-ai-for-locals.png">
+  <!-- ─── Open Graph (Facebook, LinkedIn, iMessage previews) ─────────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Next Iteration — Local AI Help" />
+  <meta property="og:title" content="Practical AI Help for Local Businesses — Mornington Peninsula" />
+  <meta property="og:description" content="Honest, plain-English AI guidance for local businesses and individuals. Free AI review, no jargon, no hard sell. Based in Mornington, VIC." />
+  <meta property="og:url" content="https://local.next-iteration.com/" />
+  <meta property="og:image" content="https://local.next-iteration.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Next Iteration — Practical AI Help for Local Businesses on the Mornington Peninsula" />
+  <meta property="og:locale" content="en_AU" />
 
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- ─── Twitter / X card ────────────────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Practical AI Help for Local Businesses — Mornington Peninsula" />
+  <meta name="twitter:description" content="Honest, plain-English AI guidance for local businesses and individuals. Free AI review, no jargon, no hard sell." />
+  <meta name="twitter:image" content="https://local.next-iteration.com/assets/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Next Iteration — Local AI Help" />
 
-  <!-- Set theme before paint to avoid a flash of the wrong mode -->
-  <script>
-    (function () {
-      try {
-        var s = localStorage.getItem("ni-theme");
-        if (s === "dark" || s === "light") document.documentElement.setAttribute("data-theme", s);
-      } catch (e) {}
-    })();
-  </script>
-  <link rel="stylesheet" href="/assets/styles.css">
+  <!-- ─── Favicon stack (covers all browsers & platforms) ────────────────── -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
 
-  <!-- Structured data: ProfessionalService -->
+  <!-- ─── PWA ─────────────────────────────────────────────────────────────── -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#1A1A24" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Local AI Help" />
+
+  <!-- ─── Geo / local discovery ───────────────────────────────────────────── -->
+  <meta name="geo.region" content="AU-VIC" />
+  <meta name="geo.placename" content="Mornington Peninsula, Victoria, Australia" />
+  <meta name="geo.position" content="-38.2193;145.0368" />
+  <meta name="ICBM" content="-38.2193, 145.0368" />
+
+  <!-- ─── Performance hints ───────────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+  <link rel="dns-prefetch" href="https://formspree.io" />
+  <link rel="preload" href="/assets/av.png" as="image" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- ─── Analytics ───────────────────────────────────────────────────────── -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+
+  <!-- ─── Structured data ─────────────────────────────────────────────────── -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://next-iteration.com/#service",
-    "name": "Next Iteration — AI for Locals",
-    "url": "https://next-iteration.com/",
-    "description": "Friendly, plain-English AI guidance and support for local small businesses and individuals on and around the Mornington Peninsula.",
-    "areaServed": [
-      { "@type": "Place", "name": "Mornington Peninsula, Victoria" },
-      { "@type": "Place", "name": "Mornington, Victoria" },
-      { "@type": "Place", "name": "Frankston, Victoria" },
-      { "@type": "Place", "name": "South East Melbourne, Victoria" },
-      { "@type": "Place", "name": "Western Port, Victoria" }
-    ],
-    "founder": { "@type": "Person", "name": "Gareth Reid" },
-    "priceRange": "Free initial review",
-    "serviceType": [
-      "AI guidance",
-      "AI training",
-      "Small business automation",
-      "Workflow automation",
-      "Business reporting",
-      "ChatGPT support",
-      "AI support for individuals"
-    ],
-    "makesOffer": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Setup & Training" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workflow & Admin Automation" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data, Reporting & Decision Support" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Websites, Marketing & Content Support" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Tools, Documentation & Knowledge Systems" } }
-    ]
-  }
-  </script>
-
-  <!-- Structured data: Person (credibility) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://next-iteration.com/#gareth",
-    "name": "Gareth Reid",
-    "jobTitle": "Software, automation & AI consultant",
-    "worksFor": { "@type": "Organization", "name": "Next Iteration" },
-    "knowsAbout": ["Artificial intelligence", "Automation", "Data science", "Software engineering", "Business reporting", "Healthcare technology"],
-    "description": "Mornington local with a background in software engineering, automation, AI and data science, including work at Peter MacCallum Cancer Centre and CSL."
-  }
-  </script>
-
-  <!-- Structured data: FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "What is AI actually useful for in a business?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Used sensibly, AI can help draft and tidy up writing, answer common enquiries, summarise documents, pull useful information out of spreadsheets and records, speed up admin and give you clearer reporting. It works best on repetitive, time-consuming tasks — not as a magic replacement for how your business runs." }
+        "@type": "LocalBusiness",
+        "@id": "https://local.next-iteration.com/#business",
+        "name": "Next Iteration — Local AI Help",
+        "url": "https://local.next-iteration.com/",
+        "description": "Practical AI help for local businesses and individuals on the Mornington Peninsula, Victoria. Free AI review, no jargon, no hard sell.",
+        "image": "https://local.next-iteration.com/assets/og-image.jpg",
+        "telephone": "",
+        "email": "garethreid123@gmail.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mornington",
+          "addressRegion": "VIC",
+          "addressCountry": "AU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -38.2193,
+          "longitude": 145.0368
+        },
+        "areaServed": [
+          { "@type": "Place", "name": "Mornington Peninsula, Victoria, Australia" },
+          { "@type": "Place", "name": "Frankston, Victoria, Australia" },
+          { "@type": "Place", "name": "Mount Eliza, Victoria, Australia" },
+          { "@type": "Place", "name": "Rosebud, Victoria, Australia" },
+          { "@type": "Place", "name": "Sorrento, Victoria, Australia" }
+        ],
+        "serviceType": [
+          "AI Consulting",
+          "Business Automation",
+          "AI Training",
+          "Data Reporting",
+          "Workflow Automation"
+        ],
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "founder": { "@id": "https://local.next-iteration.com/#gareth" },
+        "sameAs": ["https://next-iteration.com"]
       },
       {
-        "@type": "Question",
-        "name": "What AI tools should I be looking at?",
-        "acceptedAnswer": { "@type": "Answer", "text": "For most small businesses and individuals, general assistants like ChatGPT and Claude cover a lot of ground. The right choice depends on what you actually need. I can help you pick something suitable and avoid paying for tools you won't use." }
+        "@type": "Person",
+        "@id": "https://local.next-iteration.com/#gareth",
+        "name": "Gareth Reid",
+        "jobTitle": "Founder & Principal Consultant",
+        "description": "Software engineer and AI consultant based in Mornington, Victoria. Background in healthcare technology, lab automation, data science and AI tools.",
+        "url": "https://local.next-iteration.com/",
+        "email": "garethreid123@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mornington",
+          "addressRegion": "VIC",
+          "addressCountry": "AU"
+        },
+        "knowsAbout": ["Artificial Intelligence", "Business Automation", "Data Science", "Software Engineering", "Workflow Optimisation"]
       },
       {
-        "@type": "Question",
-        "name": "Are my staff using AI safely?",
-        "acceptedAnswer": { "@type": "Answer", "text": "This is worth checking. The main risks are putting sensitive customer, financial or health information into tools without understanding where it goes, and trusting answers without review. I can help you set up simple, plain-English guidelines so your team gets the benefit without the risk." }
-      },
-      {
-        "@type": "Question",
-        "name": "Could I automate some of this admin?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Often, yes. Enquiries, onboarding, follow-ups, scheduling, quotes and document generation are common candidates. I look at how your work actually flows and suggest lightweight automations that save time without adding complexity." }
-      },
-      {
-        "@type": "Question",
-        "name": "Can AI help with marketing, hiring, reporting or documentation?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — for clearer website copy, listings, social posts and emails; for drafting job ads and screening notes; for turning raw numbers into readable reports; and for building how-to guides and standard procedures. The aim is content that sounds like you, not generic AI output." }
-      },
-      {
-        "@type": "Question",
-        "name": "Is there anything I should avoid?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Avoid big, expensive 'AI transformation' projects before you understand the value, sharing sensitive data carelessly, and trusting AI output without a human check. Start small, prove it helps, and only build what earns its place." }
-      },
-      {
-        "@type": "Question",
-        "name": "What would be a sensible first step?",
-        "acceptedAnswer": { "@type": "Answer", "text": "A free, no-pressure AI review. We sit down, I listen to what's taking up your time, and I suggest one or two practical places AI, automation or better reporting might help. If I can't see a clear benefit, I'll tell you honestly." }
+        "@type": "WebSite",
+        "@id": "https://local.next-iteration.com/#website",
+        "url": "https://local.next-iteration.com/",
+        "name": "Next Iteration — Local AI Help",
+        "publisher": { "@id": "https://local.next-iteration.com/#business" }
       }
     ]
   }
   </script>
 
-  <!-- Structured data: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://next-iteration.com/#website",
-    "name": "Next Iteration — AI for Locals",
-    "url": "https://next-iteration.com/",
-    "publisher": { "@id": "https://next-iteration.com/#service" }
-  }
-  </script>
+  <style>
+    /* ─── Design tokens (shared with main site) ─────────────────────────── */
+    :root {
+      --bg:         #1A1A24;
+      --bg-alt:     #1E1E2C;
+      --card:       #22222E;
+      --card-hover: #292938;
+      --border:     #2E2E40;
+      --main:     #FF4500; /*F5B800;*/
+      --main-dim:   color-mix(in oklab, var(--main) 60%, white);
+      --main2: #FF4500;/*#4169e1;*/
+      --main2-dim: color-mix(in oklab, var(--main2) 60%, white);
+      --main3: #00FF00;
+      --main3-dim: color-mix(in oklab, var(--main3) 40%, white);
+/*rgba(78,205,196,0.12); /*rgba(245,184,0,0.12);*/
+      /*--teal:       #4ECDC4;
+      --teal-dim:   rgba(78,205,196,0.12);*/
+      --teal: #192fb0;
+      --teal-dim: #d1d5ef;
+      --pink:      #E8207A;
+      --pink-dim:   rgba(232,32,122,0.12);
+      --white:      #FFFFFF;
+      --muted:      #636374;
+      --light:      #C4C4DC;
+      --radius:     12px;
+      --radius-lg:  20px;
+      --transition: 0.3s ease;
+    }
 
-  <script src="/assets/main.js" defer></script>
+    .main-border {
+      border: 3px solid var(--main);
+    }
+
+    .main-font {
+      color: var(--main);
+      
+    }
+
+    .main-dim-bg {
+      background: color-mix(in oklab, var(--main) 80%, white);
+    }
+    /* ─── Reset ─────────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+      font-size: 1rem;
+    }
+    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.25; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ─── Top bar (brand + back link — no lab nav) ───────────────────────── */
+    .top-bar {
+      background: var(--card);
+      border-bottom: 1px solid var(--main);
+      padding: 14px 0;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      
+    }
+
+     .top-bar-inner .hl {
+      color: var(--main3);
+      font-size: 0.90rem;
+      text-transform: uppercase;
+    }
+
+    .top-bar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .top-bar-brand span {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 400;
+      color: var(--main);
+      letter-spacing: 0.08em;
+      
+    }
+
+    .top-bar-back {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
+
+    .top-bar-back:hover { color: var(--light); }
+
+    /* ─── Sticky quick-links nav ─────────────────────────────────────────── */
+    .quick-links-wrap {
+      position: sticky;
+      top: 0;
+      padding-top: 10px;
+      z-index: 90;
+      background: rgba(26, 26, 36, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid main-border;/*var(--border);*/
+    }
+
+   
+
+    .quick-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px;
+      
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .quick-links::-webkit-scrollbar { display: none; }
+
+    .quick-links a {
+      display: block;
+      padding: 14px 14px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color var(--transition), border-color var(--transition);
+    }
+
+    .quick-links a:hover { color: var(--white); border-color: var(--main ); }
+
+    .quick-links .ql-cta {
+      margin-left: auto;
+      background: var(--main);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      flex-shrink: 0;
+      border-bottom: none !important;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .quick-links .ql-cta:hover { background: var(--main); transform: translateY(-1px); }
+
+    /* ─── Sections ───────────────────────────────────────────────────────── */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-alt { background: var(--bg-alt); }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--main3);
+      margin-bottom: 12px;
+    }
+
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--main3);
+      border-radius: 2px;
+    }
+
+    h2.section-title {
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--white);
+    }
+
+    .lead {
+      font-size: 1.05rem;
+      color: white;
+      line-height: 1.8;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .lead2 {
+      font-size: 1.05rem;
+      color: var(--main);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .body-text {
+      font-size: 0.96rem;
+      color: white;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    /* ─── Hero ───────────────────────────────────────────────────────────── */
+    .hero {
+      padding: 80px 0 72px;
+      background: var(--bg);
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 60% at 10% 50%, rgba(245,184,0,0.05) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 90% 30%, rgba(78,205,196,0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--main);
+      border: var(--main);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5.5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .phero h1 {
+      font-size: clamp(2rem, 5.5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--main);
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+    /* ─── Buttons ────────────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--main2);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover { background: var(--main2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,184,0,0.25); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid var(--border);
+    }
+
+    .btn-outline:hover { border-color: var(--main); color: var(--main ); transform: translateY(-2px); }
+
+    .btn-teal {
+      background: var(--teal);
+      color: #111111;
+    }
+
+    .btn-teal:hover { background: #3dbdb5; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(78,205,196,0.25); }
+
+    /* ─── Highlight box ──────────────────────────────────────────────────── */
+    .highlight-box {
+      background: var(--main3-dim);
+      border-left: 4px solid var(--main3);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 20px 24px;
+      margin: 28px 0;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--card);
+      line-height: 1.5;
+    }
+
+    /* ─── Bullet list (plain, readable) ─────────────────────────────────── */
+    .clean-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .clean-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    .clean-list li::before {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--main);
+      flex-shrink: 0;
+      margin-top: 8px;
+    }
+
+    .clean-list.teal li::before { background: var(--main); }
+    .clean-list.pink li::before { background: var(--pink); }
+
+    /* ─── Question cards ─────────────────────────────────────────────────── */
+    .question-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .question-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      font-size: 0.92rem;
+      color: var(--light);
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .question-card i {
+      color: var(--main);
+      font-size: 0.75rem;
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+
+    /* ─── Subsection ─────────────────────────────────────────────────────── */
+    .subsection {
+      margin-top: 52px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .subsection h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .subsection-label {
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--main3);
+      margin-bottom: 8px;
+    }
+
+    /* ─── Two-column subsection layout ──────────────────────────────────── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .mini-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      font-size: 0.88rem;
+      color: white;
+      line-height: 1.5;
+    }
+
+    /* ─── Value chips ────────────────────────────────────────────────────── */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0;
+    }
+
+    .chip {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .chip-yellow { background: var(--yellow-dim); color: var(--yellow); border: 1px solid rgba(245,184,0,0.2); }
+    .chip-teal   { background: var(--teal-dim);   color: var(--teal);   border: 1px solid rgba(78,205,196,0.2); }
+    .chip-muted  { background: rgba(255,255,255,0.05); color: var(--light); border: 1px solid var(--border); }
+
+    /* ─── Value list (for "Practical, Local, Value-Based") ───────────────── */
+    .value-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .value-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.93rem;
+      color: var(--light);
+    }
+
+    .value-item i {
+      color: var(--yellow);
+      font-size: 0.9rem;
+      width: 20px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    /* ─── Section CTA (repeated after major sections) ────────────────────── */
+    .section-cta {
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .section-cta p {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    /* ─── About Gareth ───────────────────────────────────────────────────── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .about-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      text-align: center;
+      position: sticky;
+      top: 80px;
+    }
+
+    .about-avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 16px;
+      border: 2px solid var(--border);
+    }
+
+    .about-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .about-role {
+      font-size: 0.78rem;
+      color: var(--main);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .about-location {
+      font-size: 0.8rem;
+      color: var(--main2);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      justify-content: center;
+    }
+
+    /* ─── Good First Questions ───────────────────────────────────────────── */
+    .questions-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 24px 0;
+    }
+
+    .fq-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-size: 0.9rem;
+      color: var(--light);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .fq-card i {
+      color: var(--main);
+      font-size: 0.8rem;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    /* ─── Contact form ───────────────────────────────────────────────────── */
+    .form-wrap {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      max-width: 640px;
+      margin: 32px auto 0;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--light);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 13px 16px;
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color var(--transition);
+      outline: none;
+      width: 100%;
+    }
+
+    .form-group select option { background: var(--bg); }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--muted); }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--yellow); }
+
+    .form-group textarea { resize: vertical; min-height: 110px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    .form-submit { width: 100%; justify-content: center; padding: 16px; font-size: 1rem; margin-top: 4px; }
+
+    .form-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    #local-form-success {
+      display: none;
+      background: var(--main-dim);
+      border: 1px solid rgba(78,205,196,0.3);
+      border-radius: 8px;
+      padding: 16px;
+      color: var(--main);
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────────────────── */
+    .local-footer {
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      padding: 40px 0 28px;
+      margin-top: 0;
+    }
+
+    .local-footer-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .local-footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .local-footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .local-footer-links a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      transition: color var(--transition);
+    }
+
+    .local-footer-links a:hover { color: var(--main); }
+
+    .local-footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .local-footer-bottom p { font-size: 0.8rem; color: var(--muted); }
+    .local-footer-bottom span { color: var(--yellow); }
+
+    /* ─── Reveal animation ───────────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── Responsive ─────────────────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .section { padding: 60px 0; }
+      .question-grid { grid-template-columns: 1fr; }
+      .questions-grid { grid-template-columns: 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-card { position: static; }
+      .form-wrap { padding: 28px 20px; }
+      .local-footer-top { flex-direction: column; align-items: flex-start; }
+      .local-footer-bottom { flex-direction: column; text-align: center; }
+      .top-bar-back span { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.8rem; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+      .section-cta { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/">
-        <span class="mark" aria-hidden="true">NI</span>
-        <span>Next Iteration<small>AI for Locals</small></span>
+  <!-- Skip to main content (screen reader / keyboard accessibility) -->
+  <a href="#main-content" class="sr-skip">Skip to main content</a>
+  <style>
+    .sr-skip {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .sr-skip:focus {
+      position: fixed;
+      top: 0; left: 0;
+      width: auto; height: auto;
+      padding: 12px 20px;
+      background: var(--main);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      z-index: 9999;
+      border-radius: 0 0 8px 0;
+    }
+  </style>
+
+  <!-- ─── Top bar (brand only — no lab consulting nav) ─────────────────────── -->
+  <header class="top-bar" role="banner">
+    <div class="top-bar-inner">
+      <a href="/" class="top-bar-brand" aria-label="Next Iteration — Local AI Help, home">
+        <i class="fa-solid fa-handshake-angle"></i>
+        <div>
+          Next Iteration Local
+          <span class="hl">Local AI & Automation Help</span>
+        </div>
       </a>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
-        <span class="icon" aria-hidden="true">☾</span><span class="label">Dark</span>
-      </button>
+      <a href="https://next-iteration.com" class="top-bar-back" rel="noopener">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        <span>Back to Lab Consulting Site</span>
+      </a>
     </div>
   </header>
 
-  <!-- ================= HERO ================= -->
-  <header class="hero" id="top">
-    <div class="wrap">
-      <p class="eyebrow">Next Iteration — AI for Locals</p>
-      <h1>Practical AI Help for Local Businesses and Individuals</h1>
-      <p class="sub">AI is moving quickly. I help businesses and individuals on and around the Mornington Peninsula understand what it means, where it can actually help, and how to start — without getting lost in hype or jargon.</p>
-      <div class="lede">
-        <p>I’m <strong>Gareth Reid</strong>, a Mornington local with a background in software engineering, automation, AI, data science and complex workflow problem-solving.</p>
-        <p>I’ve spent much of my career working behind the scenes in critical healthcare, pathology, cancer research and biopharmaceutical environments, including <strong>Peter MacCallum Cancer Centre</strong> and <strong>CSL</strong>. In plain English, that means I’ve helped build systems that connect people, instruments, software and data — reducing manual work, improving reporting, supporting complex workflows and building AI tools to make problem-solving faster and more practical.</p>
-        <p>Now I’m taking some time away from the corporate rush and using those skills to help local and regional businesses understand AI in plain English — and, where it makes sense, put it to work. The aim is simple: help people spend less time on repetitive admin and more time on the work, customers, family and life that actually matter.</p>
-      </div>
-      <div class="hero-actions">
-        <a class="btn" href="#get-started" data-cta="book-review" data-cta-loc="hero">Book a Free AI Review</a>
-        <a class="btn ghost" href="#business-help">See how I can help</a>
+  <!-- ─── Sticky quick-links ───────────────────────────────────────────────── -->
+  <div class="quick-links-wrap">
+    <nav class="quick-links" aria-label="Page sections">
+      <a href="#what-im-trying-to-do">What I'm Trying To Do</a>
+      <a href="#business-help">Business Help</a>
+      <a href="#personal-help">Personal Help</a>
+      <a href="#about-gareth">About Me</a>
+      <a href="/services/">Services</a>
+      <a href="#get-started" class="ql-cta">Free AI Review</a>
+    </nav>
+  </div>
+
+  <!-- ─── Hero ─────────────────────────────────────────────────────────────── -->
+  <main id="main-content">
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="reveal">
+        <div class="hero-badge">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Mornington Peninsula &amp; Surrounds
+        </div>
+        <h1>Practical AI Help for Locals</h1>
+        <p class="lead">
+          AI is here. Its moving quickly. It's brilliant. And I think everyone should have a chance to cash in. 
+          I want to help businesses & individuals understand: what it means, where it can help, how to protect 
+          ourselves and our children from it AND 
+          how to start getting it working for ourselves without getting lost in the minefield.
+        </p>
+        <p class="body-text">
+          I'm Gareth Reid, a Mornington local with a long background in software engineering, 
+          automation, bioinforatics & data science, AI and complex workflow engineering. With the  
+          With 2 young kids, just starting primary school, I want to be IN the community more. 
+          If I knew how to be a local mechanic I would do that. 
+        </p>
+        <p class="lead2">
+            But I dont. 
+        </p>
+        <p class="body-text">
+          I've spent much of my career working behind the scenes building solutions to complex problems in 
+          hospitals, clinical pathology & genomics labs, cancer research, personalised medicine and the 'businesslike' 
+          biopharmaceutical environments -
+          at companies such as Peter MacCallum Cancer Centre, CSL and Mater Hospital in Brisbane.  
+        </p>
+        <p class="body-text">
+          Now im hoping to avoid the city and ply my trade in my local area - solving, supporting, 
+           training and helping
+           anyone who wants to see what's possible using A.I, Automation and a bit of clever process engineering to 
+           assist our businesses AND ourselves, to<span>
+           solve complex problems; build better solutions, create and power new apps and 
+           generally; complete tasks that we don't have the time, desire, ability OR know-how, to complete 
+           ourselves.</span>
+        </p>
+        <p class="lead"></p>
+        <div class="hero-actions">
+          <a href="#get-started" class="btn btn-primary">
+            <i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Book a Free AI Review
+          </a>
+          <a href="#business-help" class="btn btn-outline">
+            See How I Can Help <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- ================= QUICK LINKS ================= -->
-  <nav class="quick-links" aria-label="AI for Locals page sections">
-    <div class="wrap">
-      <a class="chip" data-quick-link href="#what-im-trying-to-do">What I’m Trying To Do</a>
-      <a class="chip" data-quick-link href="#business-help">Business Help</a>
-      <a class="chip" data-quick-link href="#personal-help">Personal Help</a>
-      <a class="chip" data-quick-link href="#about-me">About Me</a>
-      <a class="chip" data-quick-link href="#get-started">Get Started</a>
+  <!-- ─── What I'm Trying To Do ────────────────────────────────────────────── -->
+  <section class="section section-alt" id="what-im-trying-to-do">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Why I'm Doing This</div>
+        <h2 class="section-title">What I'm Trying To Do</h2>
+        <p class="lead">AI is not just for big tech companies. Used sensibly, it can help smaller businesses, 
+          and even individuals, reduce 
+          manual work, improve communication, understand their data, respond faster, create better documentation 
+          and operate with more confidence & efficiency.</p>
+        <p class="body-text">My aim is to help local businesses take part in the AI boom without being overwhelmed by it.
+
+        </p>
+        <p class="body-text">It is about sitting down, 
+          understanding how your business actually runs, and looking for practical ways to save time, reduce manual admin,
+           improve data visibility, analyse operations or make day-to-day work easier.</p>
+
+        <div class="highlight-box">
+          Start small. Understand the value. Only build what actually helps or saves time & money.
+        </div>
+
+        <p class="body-text">If I cannot see a clear way for AI, automation or data science to significantly 
+          benifit you or your business, I will tell you. 
+          </p>
+
+        <p class="body-text" style="color: var(--light); font-weight: 500;">I can help you:</p>
+        <ul class="clean-list">
+          <li>Understand what AI actually is — without the hype</li>
+          <li>Work out where it fits your business (and where it doesn't)</li>
+          <li>Avoid wasting money on the wrong tools</li>
+          <li>Reduce repetitive admin and manual work</li>
+          <li>Improve reporting and day-to-day visibility</li>
+          <li>Train staff to use AI safely and sensibly</li>
+          <li>Build simple, useful tools where they make sense</li>
+        </ul>
+
+        <div class="section-cta">
+          <a href="#get-started" class="btn btn-primary">Book a Free AI Review</a>
+          <p>Just a conversation.</p>
+        </div>
+      </div>
     </div>
-  </nav>
+  </section>
 
-  <main id="main">
+  <!-- ─── Business Help ─────────────────────────────────────────────────────── -->
+  <section class="section" id="business-help">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Business AI Help</div>
+        <h2 class="section-title">AI Help for Local Businesses</h2>
+        <p class="lead">Many businesses do not need a complicated AI strategy. They need someone to help answer a 
+          few simple questions:</p>
 
-    <!-- ================= WHAT I'M TRYING TO DO ================= -->
-    <section id="what-im-trying-to-do" aria-labelledby="what-h">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="what-h">What I’m Trying To Do</h2>
-        </div>
-        <p class="lead">AI is not just for big companies. Used sensibly, it can help smaller businesses reduce manual work, improve communication, understand their data, respond faster, create better documentation and operate with more confidence.</p>
-        <p>My aim is to help local businesses take part in the AI boom without being overwhelmed by it. This is not about selling you a big “AI transformation” project. It is about sitting down, understanding how your business actually runs, and looking for practical ways to save time, reduce manual admin, improve visibility or make day-to-day work easier.</p>
-        <p>If I cannot see a clear way for AI, automation or better reporting to help, I will tell you honestly rather than trying to sell you something you do not need.</p>
-        <p class="highlight">Start small. Understand the value. Only build what actually helps.</p>
-      </div>
-    </section>
-
-    <!-- ================= SERVICES ================= -->
-    <section id="services" class="alt" aria-labelledby="services-h">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="services-h">How I Can Help</h2>
-          <p class="muted">Five plain-English services — for business or personal use, as simple or as advanced as you like.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <div class="ico" aria-hidden="true">✳</div>
-            <h3>AI Setup &amp; Training</h3>
-            <p>Help choosing, setting up and learning tools like ChatGPT, Claude and other AI apps. Includes plain-English training, safe-use guidance, prompt templates and practical examples for business or personal use.</p>
-          </article>
-          <article class="card">
-            <div class="ico" aria-hidden="true">⚙</div>
-            <h3>Workflow &amp; Admin Automation</h3>
-            <p>Turn repetitive tasks into simpler workflows using forms, spreadsheets, AI assistants, automations or lightweight tools. Useful for enquiries, hiring, onboarding, follow-ups, scheduling, document generation, household admin or personal planning.</p>
-          </article>
-          <article class="card">
-            <div class="ico" aria-hidden="true">▤</div>
-            <h3>Data, Reporting &amp; Decision Support</h3>
-            <p>Set up clearer reporting from spreadsheets, finance tools, booking systems, CRMs or personal records. Includes dashboards, summaries, trend analysis, simple forecasting, budgeting support and better visibility over what is happening.</p>
-          </article>
-          <article class="card">
-            <div class="ico" aria-hidden="true">✎</div>
-            <h3>Websites, Marketing &amp; Content Support</h3>
-            <p>Use AI properly to create clearer website copy, directory listings, social posts, customer emails, service descriptions, FAQs, newsletters or personal documents — without sounding generic or robotic.</p>
-          </article>
-          <article class="card">
-            <div class="ico" aria-hidden="true">▦</div>
-            <h3>Custom Tools, Documentation &amp; Knowledge Systems</h3>
-            <p>Build simple tools, documentation systems or searchable knowledge bases for businesses, families or individuals. Useful for SOPs, how-to guides, staff training notes, personal records, family information, checklists and repeatable processes.</p>
-          </article>
+        <div class="question-grid">
+          <div class="question-card"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> What is AI actually useful for in a business?</div>
+          <div class="question-card"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> What is AI actually useful for in <em>my</em> business?</div>
+          <div class="question-card"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> What tools should I be looking at?</div>
+          <div class="question-card"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Are my staff using AI safely?</div>
+          <div class="question-card"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Could I automate some of this admin?</div>
+          <div class="question-card"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Can AI help with marketing, hiring, reporting or documentation?</div>
+          <div class="question-card"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Is there anything I should avoid?</div>
+          <div class="question-card"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> What would be a sensible first step?</div>
         </div>
       </div>
-    </section>
 
-    <!-- ================= BUSINESS HELP ================= -->
-    <section id="business-help" aria-labelledby="biz-h">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="biz-h">Business Help</h2>
-          <p class="lead">Practical, no-jargon AI help for small and local businesses — whether you’re just curious or ready to reduce some real, day-to-day admin.</p>
+      <!-- Subsection: Getting Started -->
+      <div class="subsection reveal">
+        <div class="subsection-label">Getting Started with AI</div>
+        <h3>Understanding the Tools That Are Out There</h3>
+        <p class="body-text">If you are curious about tools like ChatGPT, Claude, AI image and design platforms, AI marketing 
+          tools, words like agentic AI, 'Humans In The Loop' and hullucinations or how companies like Google, AWS and OpenAI, 
+          Anthropic, SnowFlake
+           fit into the picture, I can help explain what they do, where they are useful, and where they can cause problems 
+           if used carelessly.</p>
+        <ul class="clean-list teal">
+          <li>Setting up and getting started with AI tools</li>
+          <li>Showing practical business use cases — for your specific type of business</li>
+          <li>Creating reusable prompts and templates</li>
+          <li>Explaining limitations and risks in plain English</li>
+          <li>Training you or your staff, at whatever level makes sense</li>
+          <li>Creating simple AI usage guidelines for your team</li>
+          <li>Showing what not to put into AI tools (this matters)</li>
+        </ul>
+      </div>
+
+      <!-- Subsection: Reducing Manual Work -->
+      <div class="subsection reveal">
+        <div class="subsection-label">Reducing Manual Work</div>
+        <h3>Saving Hours You Didn't Know You Were Losing</h3>
+        <p class="body-text">Most businesses have repetitive tasks that quietly chew up hours every week. 
+          I can help look for practical ways to reduce that manual work.</p>
+        <div class="two-col">
+          <div class="mini-card">Admin processes</div>
+          <div class="mini-card">Job applications and hiring workflows</div>
+          <div class="mini-card">HR onboarding</div>
+          <div class="mini-card">Customer enquiries</div>
+          <div class="mini-card">Quote requests</div>
+          <div class="mini-card">Follow-up emails</div>
+          <div class="mini-card">Document generation</div>
+          <div class="mini-card">Scheduling</div>
+          <div class="mini-card">File organisation</div>
+          <div class="mini-card">Reporting</div>
+          <div class="mini-card">Internal approvals</div>
+          <div class="mini-card">Day-to-day operational tracking</div>
         </div>
+        <p class="body-text">Sometimes the solution is a simple spreadsheet improvement. Sometimes it is a form, dashboard, AI assistant, small web tool or workflow automation. The right answer depends on the business.</p>
+      </div>
 
-        <div class="subgrid">
-          <div>
-            <h3>Getting Started with AI</h3>
-            <p class="muted">A calm introduction to what these tools are, what they’re good and bad at, and how to try them safely — without committing to anything.</p>
-          </div>
-          <div>
-            <h3>Reducing Manual Work</h3>
-            <p class="muted">Find the repetitive tasks quietly eating your week and look at simpler ways to handle enquiries, follow-ups, scheduling and paperwork.</p>
-          </div>
-          <div>
-            <h3>Business Reporting and Data</h3>
-            <p class="muted">Turn spreadsheets, bookings and finance data into clear reports and summaries so you can see what’s actually happening at a glance.</p>
-          </div>
-          <div>
-            <h3>Marketing, Websites and Content</h3>
-            <p class="muted">Use AI to write clearer website copy, listings, emails and posts that still sound like you — not generic, robotic filler.</p>
-          </div>
-          <div>
-            <h3>Workflow and Documentation Tools</h3>
-            <p class="muted">Build simple checklists, how-to guides, SOPs and small tools so knowledge lives somewhere searchable instead of in one person’s head.</p>
-          </div>
-          <div>
-            <h3>As Simple or as Advanced as You Like</h3>
-            <p class="muted">Some people want a one-hour walkthrough. Others want a proper automation or reporting setup. We work at whatever level suits you.</p>
-          </div>
-        </div>
+      <!-- Subsection: Reporting and Data -->
+      <div class="subsection reveal">
+        <div class="subsection-label">Business Reporting and Data</div>
+        <h3>Making Sense of the Information You Already Have</h3>
+        <p class="body-text">A lot of businesses already have useful information sitting in spreadsheets, finance systems, booking tools, CRMs or email threads — but it is hard to see what is really going on. I can help turn that information into clearer reporting.</p>
+        <ul class="clean-list">
+          <li>Sales summaries and trends</li>
+          <li>Customer behaviour and repeat business insights</li>
+          <li>Job or workflow tracking</li>
+          <li>Operational dashboards</li>
+          <li>Marketing performance</li>
+          <li>Staff or workload visibility</li>
+          <li>Simple forecasting</li>
+          <li>Monthly management reports</li>
+        </ul>
+      </div>
 
-        <h3 id="good-questions">Good first questions</h3>
-        <p class="muted">These are the kinds of questions we can work through together. Here’s how I’d answer them.</p>
-        <div class="faq">
-          <div class="qa">
-            <p class="q">What is AI actually useful for in my business?</p>
-            <p class="a">Used sensibly, AI can help draft and tidy up writing, answer common enquiries, summarise documents, pull useful information out of spreadsheets and records, speed up admin and give you clearer reporting. It works best on repetitive, time-consuming tasks — not as a magic replacement for how your business runs.</p>
-          </div>
-          <div class="qa">
-            <p class="q">What tools should I be looking at?</p>
-            <p class="a">For most small businesses, general assistants like ChatGPT and Claude cover a lot of ground. The right choice depends on what you actually need. I can help you pick something suitable and avoid paying for tools you won’t use.</p>
-          </div>
-          <div class="qa">
-            <p class="q">Are my staff using AI safely?</p>
-            <p class="a">Worth checking. The main risks are putting sensitive customer, financial or health information into tools without understanding where it goes, and trusting answers without review. I can help you set up simple, plain-English guidelines so your team gets the benefit without the risk.</p>
-          </div>
-          <div class="qa">
-            <p class="q">Could I automate some of this admin?</p>
-            <p class="a">Often, yes. Enquiries, onboarding, follow-ups, scheduling, quotes and document generation are common candidates. I look at how your work actually flows and suggest lightweight automations that save time without adding complexity.</p>
-          </div>
-          <div class="qa">
-            <p class="q">Can AI help with marketing, hiring, reporting or documentation?</p>
-            <p class="a">Yes — for clearer website copy, listings and emails; for drafting job ads and screening notes; for turning raw numbers into readable reports; and for building how-to guides and standard procedures. The aim is content that sounds like you, not generic AI output.</p>
-          </div>
-          <div class="qa">
-            <p class="q">Is there anything I should avoid?</p>
-            <p class="a">Avoid big, expensive “AI transformation” projects before you understand the value, sharing sensitive data carelessly, and trusting AI output without a human check. Start small, prove it helps, and only build what earns its place.</p>
-          </div>
-          <div class="qa">
-            <p class="q">What would be a sensible first step?</p>
-            <p class="a">A free, no-pressure AI review. We sit down, I listen to what’s taking up your time, and I suggest one or two practical places AI, automation or better reporting might help. If I can’t see a clear benefit, I’ll tell you honestly.</p>
-          </div>
+      <!-- Subsection: Marketing and Content -->
+      <div class="subsection reveal">
+        <div class="subsection-label">Marketing, Websites and Content</div>
+        <h3>AI-Assisted Marketing That Actually Sounds Like You</h3>
+        <p class="body-text">AI can help with marketing, but only if it is guided properly. Otherwise it tends to produce generic content that sounds like everyone else.</p>
+        <ul class="clean-list teal">
+          <li>Website copy and service descriptions</li>
+          <li>Local directory profiles (Google Business, etc.)</li>
+          <li>Social media ideas and content calendars</li>
+          <li>Customer emails and newsletters</li>
+          <li>FAQs and common question responses</li>
+          <li>Blog and article ideas based on your customers' questions</li>
+          <li>AI-assisted content workflows you can keep running yourself</li>
+          <li>Simple landing pages or website builds</li>
+          <li>Practical marketing systems you can maintain yourself</li>
+        </ul>
+      </div>
+
+      <!-- Subsection: Workflow and Documentation -->
+      <div class="subsection reveal">
+        <div class="subsection-label">Workflow and Documentation</div>
+        <h3>Capturing How Your Business Actually Works</h3>
+        <p class="body-text">I also have access to simple tools that can help turn messy processes into clearer workflows and documentation.</p>
+        <ul class="clean-list">
+          <li>Standard operating procedures</li>
+          <li>Onboarding guides for new staff</li>
+          <li>Internal process maps</li>
+          <li>Customer intake steps</li>
+          <li>Service delivery workflows</li>
+          <li>Internal knowledge bases</li>
+          <li>Business continuity notes</li>
+        </ul>
+        <div class="highlight-box" style="margin-top: 24px;">
+          Many businesses rely on one or two people "just knowing how things work." Good documentation reduces 
+          that pressure — and makes the business easier to hand over, scale, or step back from. AI can create and maintain this 
+          for you - to any level of compliance you require. 
         </div>
       </div>
-    </section>
 
-    <!-- ================= CTA BAND (mid) ================= -->
-    <section class="cta-band" aria-label="Book a free AI review">
-      <div class="wrap">
-        <h2>Want to see whether AI could help?</h2>
-        <p>Start with a free, no-pressure AI review. No jargon. No hard sell. No big project unless there’s a clear reason for one.</p>
-        <a class="btn" href="#get-started" data-cta="book-review" data-cta-loc="mid">Book a Free AI Review</a>
+      <!-- Subsection: As simple or as advanced as you like -->
+      <div class="subsection reveal">
+        <div class="subsection-label">Where to Start</div>
+        <h3>As Simple or as Advanced as You Like</h3>
+        <p class="body-text">You do not need to know exactly what you want.</p>
+        <p class="body-text">Some businesses may want some demos or training/eduction.
+          Others may want a custom admin team, real-time reporting dashboards, automation workflows, 
+          website updates, staff training session or internal documentation system.</p>
+          <p class="body-text">You may find a team of specially trained AI agents can prepare and submit 
+            your BAS, take & reschedule bookings, reshuffle the christmas party budget based on resultant tax bill, 
+            all whilst analysing operations and proposing ways optimise. All whilst you are makng a coffee.</p>
+
+        <p class="body-text">All are good. <span class="lead">The point is to start.</span>
+          </p>
       </div>
-    </section>
 
-    <!-- ================= PERSONAL HELP ================= -->
-    <section id="personal-help" class="alt" aria-labelledby="personal-h">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="personal-h">Personal Help</h2>
-        </div>
-        <p>While this page is mainly aimed at local businesses, I’m also happy to help individuals, families or community members who simply want to understand AI better.</p>
-        <p>Many people have heard of tools like ChatGPT but have never really used them, even though they could help with everyday tasks like planning, writing, organising information, comparing options, learning new skills, travel planning, budgeting, emails, forms or just getting through admin more easily.</p>
-        <p>If you are curious but unsure where to start, I can provide a simple, patient walkthrough and show practical examples that suit your life, not just a business.</p>
+      <div class="section-cta reveal">
+        <a href="#get-started" class="btn btn-primary">Book a Free AI Review</a>
+        <p>Free, no-pressure — we'll look at your business and see what actually makes sense.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ================= ABOUT ================= -->
-    <section id="about-me" aria-labelledby="about-h">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="about-h">About Me</h2>
+  <!-- ─── Personal Help ─────────────────────────────────────────────────────── -->
+  <section class="section section-alt" id="personal-help">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Not Just for Businesses</div>
+        <h2 class="section-title">Help for Individuals and Families Too</h2>
+        <p class="lead">While this page is mainly aimed at local businesses, I'm also happy to help individuals, families or community members who simply want to understand AI better.</p>
+        <p class="body-text">Many people have heard of tools like ChatGPT but have never really used them — even though they could genuinely help with everyday tasks. If you are curious but unsure where to start, I can provide a simple, patient walkthrough and show practical examples that suit your life, not just a business.</p>
+
+        <div class="two-col" style="margin-top: 28px;">
+          <div class="mini-card">Learning how to use ChatGPT or Claude</div>
+          <div class="mini-card">Writing emails or letters more easily</div>
+          <div class="mini-card">Organising family information</div>
+          <div class="mini-card">Comparing products, services or travel options</div>
+          <div class="mini-card">Planning trips or events</div>
+          <div class="mini-card">Understanding documents or forms</div>
+          <div class="mini-card">Budgeting and household admin</div>
+          <div class="mini-card">Learning new skills  with AI as a teacher</div>
+          <div class="mini-card">Using AI safely and privately</div>
+          <div class="mini-card">Creating simple checklists and plans</div>
         </div>
-        <p>I’m Gareth Reid, a Mornington local, dad of young kids at Mornington Primary School, and someone who has spent a long time solving technical problems for larger organisations.</p>
-        <p>I’ve spent much of my career working behind the scenes in critical healthcare, pathology, cancer research and biopharmaceutical environments, including <strong>Peter MacCallum Cancer Centre</strong> and <strong>CSL</strong>. In plain English, that means I’ve helped build systems that connect people, instruments, software and data — reducing manual work, improving reporting, supporting complex workflows and using modern AI-style tools to make problem-solving faster and more practical.</p>
-        <p>I’m now taking some time away from the corporate hustle and using those skills closer to home — particularly for businesses and people across the Mornington Peninsula, Victoria and surrounding areas.</p>
-        <p>I know a lot of local businesses are hearing about AI and wondering whether they are falling behind. I also know many do not want to be talked down to, buried in jargon or sold an expensive system before they understand what they actually need.</p>
-        <p>My aim is to offer something more useful: a local, practical, plain-English way to understand AI and apply it where it genuinely helps.</p>
-      </div>
-    </section>
 
-    <!-- ================= GET STARTED / CONTACT ================= -->
-    <section id="get-started" class="alt" aria-labelledby="start-h">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="start-h">Get Started</h2>
-          <p class="lead">Want to see whether AI could help? Start with a free, no-pressure AI review. I’ll look at your business, listen to what is taking up time, and suggest practical ways AI, automation or better reporting might help. No jargon. No hard sell. No big project unless there is a clear reason for one.</p>
-        </div>
-
-        <div class="contact-grid">
-          <form class="contact" id="contact-form" action="https://formspree.io/f/mwvzyeog" method="POST" novalidate aria-describedby="privacy-note">
-            <input type="hidden" name="_subject" value="AI for Locals enquiry">
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
-            <div class="field">
-              <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
-            </div>
-            <div class="field">
-              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
-            </div>
-            <div class="field">
-              <label for="business">Business name <span class="hint">(if relevant)</span></label>
-              <input id="business" name="business" type="text" autocomplete="organization">
-            </div>
-            <div class="field">
-              <label for="location">Location <span class="hint">(optional)</span></label>
-              <input id="location" name="location" type="text" placeholder="e.g. Mornington, Frankston" autocomplete="address-level2">
-            </div>
-            <div class="field">
-              <label for="interest">I’m interested in</label>
-              <select id="interest" name="interest">
-                <option value="">Choose one…</option>
-                <option value="business">AI for my business</option>
-                <option value="personal">AI for personal use</option>
-                <option value="admin">Reducing admin / manual work</option>
-                <option value="reporting">Reporting / data</option>
-                <option value="marketing">Website / marketing / content</option>
-                <option value="training">Staff training</option>
-                <option value="not-sure">Not sure yet</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
-              <textarea id="message" name="message" required placeholder="A sentence or two about what’s taking up your time is plenty."></textarea>
-            </div>
-            <div class="field">
-              <label for="contact_method">Preferred contact method <span class="hint">(optional)</span></label>
-              <select id="contact_method" name="contact_method">
-                <option value="">No preference</option>
-                <option value="email">Email</option>
-                <option value="phone">Phone</option>
-                <option value="either">Either</option>
-              </select>
-            </div>
-
-            <p class="privacy-note" id="privacy-note">
-              Please don’t submit sensitive personal, business, financial or client data in this first enquiry. A short summary is all I need to get back to you.
-            </p>
-
-            <button class="btn" type="submit" data-cta="book-review" data-cta-loc="form">Request a Free AI Review</button>
-
-            <p class="form-status" id="form-status" aria-live="polite"></p>
-          </form>
-
-          <aside class="contact-aside" aria-label="Other ways to get in touch">
-            <div class="card">
-              <h3 style="margin-top:0">Prefer to email directly?</h3>
-              <p class="muted">You can reach me at<br>
-                <a data-email-link href="mailto:info@next-iteration.com">info@next-iteration.com</a>
-              </p>
-              <h3>What happens next</h3>
-              <ul class="muted">
-                <li>I read what you’ve sent.</li>
-                <li>I get back to you personally.</li>
-                <li>We arrange a short, free, no-pressure chat.</li>
-              </ul>
-              <p class="muted" style="margin-bottom:0">Serving Mornington, Frankston, the wider Mornington Peninsula, South East Melbourne, Western Port and nearby Victorian regions.</p>
-            </div>
-          </aside>
+        <div class="section-cta">
+          <a href="#get-started" class="btn btn-outline">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Get in Touch
+          </a>
+          <p>Happy to chat. No question is too basic.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- ─── Practical, Local, Value-Based ────────────────────────────────────── -->
+  <section class="section" id="approach">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">My Approach</div>
+        <h2 class="section-title">Practical, Local and Value-Based</h2>
+        <p class="lead">I'm not trying to sell large corporate projects to small businesses that do not need them.</p>
+
+        <div class="value-list">
+          <div class="value-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Start with a free review — no commitment required</div>
+          <div class="value-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Explain things clearly, without jargon</div>
+          <div class="value-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Look for practical, tangible value before recommending anything</div>
+          <div class="value-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Keep the first step small and low-risk</div>
+          <div class="value-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Avoid unnecessary complexity</div>
+          <div class="value-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Only build what is genuinely useful</div>
+          <div class="value-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Keep cost proportional to the benefit</div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 32px;">
+          If I can see a way to save you time, reduce manual work, improve reporting or make something easier — I'll explain it clearly.<br /><br />
+          If I cannot, I'll say that too.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── About Gareth ──────────────────────────────────────────────────────── -->
+  <section class="section section-alt" id="about-gareth">
+    <div class="container">
+      <div class="about-grid reveal">
+
+        <div class="about-card">
+          <div class="about-avatar">
+            <img src="/assets/av.png" alt="Gareth Reid" />
+          </div>
+          <div class="about-name">Gareth Reid</div>
+          <div class="about-role">Founder &amp; Principal Consultant</div>
+          <div class="about-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Mornington, VIC</div>
+        </div>
+
+        <div>
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">About Gareth</h2>
+          <p class="body-text">
+            I'm Gareth Reid, a Mornington local, dad of young kids at Mornington Primary School, and someone who has spent a long time solving technical problems for larger organisations.
+          </p>
+          <p class="body-text">
+            I've spent much of my career working behind the scenes in critical healthcare, pathology, cancer research and biopharmaceutical environments, including Peter MacCallum Cancer Centre and CSL. In plain English, that means I've helped build systems that connect people, instruments, software and data — reducing manual work, improving reporting, supporting complex workflows and using modern AI-style tools to make problem-solving faster and more practical.
+          </p>
+          <p class="body-text">
+            I'm now taking some time away from the corporate hustle and using those skills closer to home — particularly for businesses and people across the Mornington Peninsula, Victoria and surrounding areas.
+          </p>
+          <p class="body-text">
+            I know a lot of local businesses are hearing about AI and wondering whether they are falling behind. I also know many do not want to be talked down to, buried in jargon or sold an expensive system before they understand what they actually need.
+          </p>
+          <p class="body-text">
+            My aim is to offer something more useful: a local, practical, plain-English way to understand AI and apply it where it genuinely helps.
+          </p>
+
+          <div class="chips" style="margin-top: 28px;">
+            <span class="chip chip-yellow">Software engineering</span>
+            <span class="chip chip-teal">Automation</span>
+            <span class="chip chip-teal">AI tools</span>
+            <span class="chip chip-yellow">Data science</span>
+            <span class="chip chip-muted">Healthcare technology</span>
+            <span class="chip chip-muted">Peter MacCallum Cancer Centre</span>
+            <span class="chip chip-muted">CSL</span>
+            <span class="chip chip-teal">Mornington local</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Good First Questions ─────────────────────────────────────────────── -->
+  <section class="section" id="first-questions">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Not Sure Where to Start?</div>
+        <h2 class="section-title">Good First Questions</h2>
+        <p class="lead">A good starting point might be one of these:</p>
+
+        <div class="questions-grid">
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Can AI save me time?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> What should I be using ChatGPT for?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Can I automate this admin process?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Can I make reporting easier?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Can AI help with marketing?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Are my staff using AI safely?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Could I build a simple tool for this?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Is this worth spending money on?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Could AI help me with everyday admin or planning?</div>
+          <div class="fq-card"><i class="fa-solid fa-circle-dot" aria-hidden="true"></i> Could someone show me how to use it safely and properly?</div>
+        </div>
+
+        <div class="highlight-box" style="margin-top: 8px;">
+          If you are asking any of those questions, a free review is probably worthwhile.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Get Started / CTA + Form ─────────────────────────────────────────── -->
+  <section class="section section-alt" id="get-started">
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 600px; margin: 0 auto 8px;">
+        <div class="section-label" style="justify-content: center;">Free Review</div>
+        <h2 class="section-title">Want to See Whether AI Could Help?</h2>
+        <p class="lead">Start with a free, no-pressure AI review. I'll look at your business, listen to what is taking up time, and suggest practical ways AI, automation or better reporting might help.</p>
+        <p class="body-text">No jargon. No hard sell. No big project unless there is a clear reason for one.</p>
+      </div>
+
+      <div class="form-wrap reveal">
+        <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 6px;">Book a Free AI Review</h3>
+        <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 28px;">Fill in a few details and I'll get back to you personally, usually within 24 hours.</p>
+
+        <form id="localForm" action="https://formspree.io/f/mwvzyeog" method="POST">
+          <input type="hidden" name="_subject" value="[Local AI] New enquiry from next-iteration.com" />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="l-name">Your Name *</label>
+              <input type="text" id="l-name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="l-email">Email Address *</label>
+              <input type="email" id="l-email" name="email" placeholder="jane@yourbusiness.com.au" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="l-business">Business Name</label>
+              <input type="text" id="l-business" name="business" placeholder="Your business (if relevant)" />
+            </div>
+            <div class="form-group">
+              <label for="l-location">Location</label>
+              <input type="text" id="l-location" name="location" placeholder="e.g. Mornington, Frankston" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="l-interest">I'm Interested In</label>
+            <select id="l-interest" name="interest">
+              <option value="">Select what fits best…</option>
+              <option>AI for my business</option>
+              <option>Reducing admin / manual work</option>
+              <option>Better reporting and data</option>
+              <option>Website, marketing and content</option>
+              <option>Staff training on AI</option>
+              <option>AI for personal use</option>
+              <option>Not sure yet — just exploring</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="l-message">Tell Me a Bit About Your Situation</label>
+            <textarea id="l-message" name="message" placeholder="What does your business do? What takes up the most time? What are you hoping to achieve? There's no wrong answer — just say what's on your mind."></textarea>
+          </div>
+
+          <!-- Honeypot spam protection -->
+          <input type="text" name="_gotcha" style="display:none" />
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send — Book My Free Review
+          </button>
+          <p class="form-note">I read every message personally and respond within 24 hours. No spam, no automated replies.</p>
+          <div id="local-form-success">
+            <i class="fa-solid fa-check-circle" aria-hidden="true"></i>&nbsp; Thanks — received. I'll be in touch personally within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ────────────────────────────────────────────────────────────── -->
   </main>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="cols">
+  <footer class="local-footer" role="contentinfo">
+    <div class="local-footer-inner">
+      <div class="local-footer-top">
         <div>
-          <h2>Next Iteration — AI for Locals</h2>
-          <p style="margin:0">Practical, plain-English AI help for local businesses and individuals. Founded by Gareth Reid.</p>
+          <div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px;">Next Iteration — Local AI Help</div>
+          <div style="font-size: 0.83rem; color: var(--muted);">Practical AI for local businesses and individuals on the Mornington Peninsula, Victoria.</div>
+          <div style="font-size: 0.83rem; color: var(--muted); margin-top: 4px;">
+            <i class="fa-solid fa-envelope" style="color: var(--teal); margin-right: 6px;" aria-hidden="true"></i>garethreid123@gmail.com
+          </div>
         </div>
-        <div>
-          <h2>Sections</h2>
-          <ul>
-            <li><a href="#what-im-trying-to-do">What I’m Trying To Do</a></li>
-            <li><a href="#business-help">Business Help</a></li>
-            <li><a href="#personal-help">Personal Help</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#get-started">Get Started</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Service area</h2>
-          <p style="margin:0">Mornington Peninsula, Mornington, Frankston, South East Melbourne, Western Port and surrounding Victorian regions.</p>
-          <p style="margin:12px 0 0"><a data-email-link href="mailto:info@next-iteration.com">info@next-iteration.com</a></p>
+        <div class="local-footer-links">
+          <a href="#what-im-trying-to-do">What I'm Trying To Do</a>
+          <a href="#business-help">Business Help</a>
+          <a href="#personal-help">Personal Help</a>
+          <a href="#about-gareth">About Me</a>
+          <a href="#get-started">Free Review</a>
         </div>
       </div>
-      <div class="fine">
-        <p style="margin:0">© <span id="year">2026</span> Next Iteration. If I can’t see a clear way for AI, automation or better reporting to help you, I’ll tell you honestly rather than sell you something you don’t need.</p>
+      <div class="local-footer-bottom">
+        <p>&copy; 2025 Next Iteration. All rights reserved.</p>
+        <p>Also offering <a href="/" style="color: var(--teal);">Lab Automation &amp; Technical Consulting</a> for life science laboratories. <span>|</span> <a href="#home" style="color: var(--muted);">Back to top ↑</a></p>
       </div>
     </div>
   </footer>
 
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    // ── Scroll reveal ─────────────────────────────────────────────────────
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // ── Quick-links active state ──────────────────────────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const qlLinks  = document.querySelectorAll('.quick-links a:not(.ql-cta)');
+    const sectionObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          qlLinks.forEach(l => {
+            l.style.color = l.getAttribute('href') === `#${id}` ? 'var(--white)' : '';
+            l.style.borderColor = l.getAttribute('href') === `#${id}` ? 'var(--yellow)' : '';
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => sectionObs.observe(s));
+
+    // ── Formspree async submit ────────────────────────────────────────────
+    const localForm = document.getElementById('localForm');
+    if (localForm) {
+      localForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const btn = this.querySelector('[type=submit]');
+        const successEl = document.getElementById('local-form-success');
+        const orig = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Sending…';
+        try {
+          const res = await fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this),
+            headers: { Accept: 'application/json' }
+          });
+          if (res.ok) {
+            successEl.style.display = 'block';
+            this.reset();
+            if (typeof gtag === 'function') gtag('event', 'form_submit', { form_id: 'local_ai_review' });
+          } else {
+            btn.innerHTML = '<i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Error — please try again';
+            btn.disabled = false;
+          }
+        } catch {
+          btn.innerHTML = '<i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Error — please try again';
+          btn.disabled = false;
+        }
+      });
+    }
+
+    // ── Service Worker ────────────────────────────────────────────────────
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      });
+    }
+  </script>
 </body>
 </html>
