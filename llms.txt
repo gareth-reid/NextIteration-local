@@ -8,17 +8,16 @@
 - **What:** AI guidance, setup and training; workflow and admin automation; data, reporting and decision support; websites, marketing and content support; custom tools, documentation and knowledge systems.
 - **For whom:** Small and local businesses, individuals, families and community users — including older or less technical people.
 - **Where:** Mornington Peninsula, Mornington, Frankston, South East Melbourne, Western Port and nearby regions in Victoria, Australia. Service-area based (no public storefront).
-- **Differentiator:** Local, practical and plain-English, backed by serious technical experience — including work at Peter MacCallum Cancer Centre and CSL in healthcare, pathology, cancer research and biopharmaceutical software, automation and data.
-- **Trust caveat:** If there is no clear way for AI, automation or better reporting to help, Gareth will say so rather than sell an unnecessary project.
+- **Differentiator:** Local, practical, and plain-English, backed by serious technical experience — including work at Peter MacCallum Cancer Centre and CSL in healthcare, pathology, cancer research and biopharmaceutical software, automation and data.
+- **Trust caveat:** If there is no clear way for AI, automation or better reporting to help, Gareth will say so rather than sell an unnecessary project. 
 
 ## Primary call to action
 
-- Book a Free AI Review: https://next-iteration.com/ai-for-locals/#get-started
+- Book a Free AI Review: https://next-iteration.com/#get-started
 
 ## Pages
 
-- [AI for Locals](https://next-iteration.com/ai-for-locals/): Main landing page — services, business help, personal help, about, and contact.
-- [Home](https://next-iteration.com/): Next Iteration overview.
+- [AI for Locals](https://next-iteration.com/): Main landing page — services, business help, personal help, about, and contact.
 
 ## Services
 
